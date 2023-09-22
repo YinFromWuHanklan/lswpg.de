@@ -1,10 +1,10 @@
 <svelte:head>
 	<title>About</title>
-	<meta name="description" content="About this app" />
+	<meta name="description" content="Kooperationen" />
 </svelte:head>
 
 <div class="text-column">
-	<h1>About this app</h1>
+	<h1>Kooperationen</h1>
 
 	<p>
 		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
