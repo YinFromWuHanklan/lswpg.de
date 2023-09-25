@@ -1,0 +1,28 @@
+// variables
+
+$primary: #00336A;
+$secondary: #00558e;
+$highligthing: #db5461;
+
+
+body {
+    margin: 0;
+    background-color: $primary;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+    color: #fff;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+a {
+    color: $highligthing;
+}
