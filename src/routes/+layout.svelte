@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>&copy; 2023 Linner Seidemann Wirtschaftsprüfung | <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
 	</footer>
 </div>
 
