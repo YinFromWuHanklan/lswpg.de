@@ -14,8 +14,6 @@
 	</div>
 
 <style lang="scss">
-	@import '../global.scss';
-
 	.intro {
 		background-image: url('$lib/images/telephone-586266_1920.jpg');
 		background-repeat: no-repeat;

@@ -23,9 +23,6 @@
 </div>
 
 <style lang="scss">
-
-	@import '../global.scss';
-
 	.intro {
 		background-image: url('$lib/images/business-2846221_1920.jpg');
 		background-repeat: no-repeat;
@@ -39,7 +36,7 @@
 	.content {
 		width: 80%;
 		margin: 2rem auto;
-		background-color: $secondary;
+		background-color: #00558e; // secondary color, To Do
 		padding: 2rem;
 	}
 </style>

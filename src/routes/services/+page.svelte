@@ -78,9 +78,6 @@
 
 <style lang="scss">
 
-
-@import '../global.scss';
-
 	.intro {
 		background-image: url('$lib/images/computer-820281_1920.jpg');
 		background-repeat: no-repeat;

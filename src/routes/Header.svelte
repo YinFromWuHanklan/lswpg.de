@@ -33,9 +33,9 @@
 </header>
 
 <style lang="scss">
-	@import './global.scss';
+
 	nav {
-		background-color: $primary;
+		background-color: #00336A; // To Do primary color
 
 		.container {
 
