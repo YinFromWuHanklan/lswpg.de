@@ -1,7 +1,7 @@
 import { D as DEV } from "./chunks/prod-ssr.js";
 import { b as base, a as assets, r as reset, p as public_env, o as options, s as set_private_env, c as set_public_env, g as get_hooks } from "./chunks/internal.js";
 import * as devalue from "devalue";
-import { w as writable, r as readable } from "./chunks/index.js";
+import { n as noop, s as safe_not_equal } from "./chunks/ssr.js";
 import { parse, serialize } from "cookie";
 import * as set_cookie_parser from "set-cookie-parser";
 const SVELTE_KIT_ASSETS = "/_svelte_kit_assets";
@@ -104,6 +104,7 @@ class ActionFailure {
 function exec(match, params, matchers) {
   const result = {};
   const values = match.slice(1);
+  const values_needing_match = values.filter((value) => value !== void 0);
   let buffered = 0;
   for (let i = 0; i < params.length; i += 1) {
     const param = params[i];
@@ -122,6 +123,9 @@ function exec(match, params, matchers) {
       const next_param = params[i + 1];
       const next_value = values[i + 1];
       if (next_param && !next_param.rest && next_param.optional && next_value && param.chained) {
+        buffered = 0;
+      }
+      if (!next_param && !next_value && Object.keys(result).length === values_needing_match.length) {
         buffered = 0;
       }
       continue;
@@ -838,6 +842,53 @@ async function stream_to_string(stream) {
     result += decoder.decode(value);
   }
   return result;
+}
+const subscriber_queue = [];
+function readable(value, start) {
+  return {
+    subscribe: writable(value, start).subscribe
+  };
+}
+function writable(value, start = noop) {
+  let stop;
+  const subscribers = /* @__PURE__ */ new Set();
+  function set(new_value) {
+    if (safe_not_equal(value, new_value)) {
+      value = new_value;
+      if (stop) {
+        const run_queue = !subscriber_queue.length;
+        for (const subscriber of subscribers) {
+          subscriber[1]();
+          subscriber_queue.push(subscriber, value);
+        }
+        if (run_queue) {
+          for (let i = 0; i < subscriber_queue.length; i += 2) {
+            subscriber_queue[i][0](subscriber_queue[i + 1]);
+          }
+          subscriber_queue.length = 0;
+        }
+      }
+    }
+  }
+  function update(fn) {
+    set(fn(value));
+  }
+  function subscribe(run, invalidate = noop) {
+    const subscriber = [run, invalidate];
+    subscribers.add(subscriber);
+    if (subscribers.size === 1) {
+      stop = start(set, update) || noop;
+    }
+    run(value);
+    return () => {
+      subscribers.delete(subscriber);
+      if (subscribers.size === 0 && stop) {
+        stop();
+        stop = null;
+      }
+    };
+  }
+  return { set, update, subscribe };
 }
 function hash(...values) {
   let hash2 = 5381;
@@ -1659,6 +1710,14 @@ async function respond_with_error({
   error: error2,
   resolve_opts
 }) {
+  if (event.request.headers.get("x-sveltekit-error")) {
+    return static_error_page(
+      options2,
+      status,
+      /** @type {Error} */
+      error2.message
+    );
+  }
   const fetched = [];
   try {
     const branch = [];
@@ -2769,6 +2828,13 @@ async function respond(request, options2, manifest, state) {
           }
         }
         return response;
+      }
+      if (state.error && event2.isSubRequest) {
+        return await fetch(request, {
+          headers: {
+            "x-sveltekit-error": "true"
+          }
+        });
       }
       if (state.error) {
         return text("Internal Server Error", {

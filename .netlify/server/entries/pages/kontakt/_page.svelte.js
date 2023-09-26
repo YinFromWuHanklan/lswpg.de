@@ -1,9 +1,12 @@
 import { c as create_ssr_component } from "../../../chunks/ssr.js";
+const _page_svelte_svelte_type_style_lang = "";
+const css = {
+  code: '.intro.svelte-6ll351{background-image:url("$lib/images/telephone-586266_1920.jpg");background-repeat:no-repeat;background-size:cover;height:30vh;display:flex;align-items:center;justify-content:center}.content.svelte-6ll351{display:flex;flex-direction:row;justify-content:center;margin:2rem;padding:2rem;color:#FFF}',
+  map: null
+};
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${$$result.head += `<!-- HEAD_svelte-1ieg176_START -->${$$result.title = `<title>About</title>`, ""}<meta name="description" content="Kontakt"><!-- HEAD_svelte-1ieg176_END -->`, ""} <div class="text-column" data-svelte-h="svelte-upiefj"><h1>Kontakt</h1> <p>This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:</p> <pre>npm create svelte@latest</pre> <p>The page you&#39;re looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don&#39;t need to load any JavaScript. Try viewing the page&#39;s source, or opening
-		the devtools network panel and reloading.</p></div>`;
+  $$result.css.add(css);
+  return `${$$result.head += `<!-- HEAD_svelte-1ieg176_START -->${$$result.title = `<title>About</title>`, ""}<meta name="description" content="Kontakt"><!-- HEAD_svelte-1ieg176_END -->`, ""} <div class="intro svelte-6ll351" data-svelte-h="svelte-1roh62f"><h1>Kontakt</h1></div> <div class="content svelte-6ll351" data-svelte-h="svelte-12gnkgs"><div>Bild</div> <div>Kontaktdaten etc.</div> <div>Bild</div> </div>`;
 });
 export {
   Page as default
