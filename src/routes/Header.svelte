@@ -3,45 +3,43 @@
 </script>
 
 <header>
-	<nav class="navbar navbar-expand-lg navbar-dark">
-		<div class="container">
-		  <a class="navbar-brand" href="/">Linner Seidemann Wirtschaftsprüfung</a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-			  <li class="nav-item active">
+	<nav>
+		<ul>
+			<li>
 				<a class="nav-link" href="/">Home</a>
-			  </li>
-			  <li class="nav-item">
+			</li>
+			<li>
 				<a class="nav-link" href="/about-us">About us</a>
-			  </li>
-			  <li class="nav-item">
+			</li>
+			<li>
 				<a class="nav-link" href="/services">Services</a>
-			  </li>
-			  <li class="nav-item">
+			</li>
+			<li>
 				<a class="nav-link" href="/kooperationen">Kooperationen</a>
-			  </li>
-			  <li class="nav-item">
+			</li>
+			<li>
 				<a class="nav-link" href="/kontakt">Kontakt</a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
+			</li>
+		</ul>
 	</nav>
 </header>
 
 <style lang="scss">
-
 	nav {
-		background-color: #00336A; // To Do primary color
+		padding: 0.8rem 2rem;
 
-		.container {
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
 
-			.nav-link,
-			a {
-				color: #FFF;
+			li {
+				list-style: none;
+				padding: 0 1rem;
+
+				a {
+					text-decoration: none;
+				}
 			}
 		}
 	}
