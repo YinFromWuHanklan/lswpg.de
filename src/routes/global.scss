@@ -4,10 +4,17 @@ $primary: #00336A;
 $secondary: #00558e;
 $highligthing: #db5461;
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     background-color: $primary;
+}
+
+main {
+    padding: 0;
 }
 
 h1,

@@ -1,122 +1,46 @@
 <script>
-	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
+	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
-
 	<nav>
 		<ul>
 			<li>
-				<a href="/">Home</a>
+				<a class="nav-link" href="/">Home</a>
 			</li>
 			<li>
-				<a href="/about-us">About us</a>
+				<a class="nav-link" href="/about-us">About us</a>
 			</li>
 			<li>
-				<a href="/services">Services</a>
+				<a class="nav-link" href="/services">Services</a>
 			</li>
 			<li>
-				<a href="/kooperationen">Kooperationen</a>
+				<a class="nav-link" href="/kooperationen">Kooperationen</a>
 			</li>
 			<li>
-				<a href="/kontakt">Kontakt</a>
+				<a class="nav-link" href="/kontakt">Kontakt</a>
 			</li>
 		</ul>
 	</nav>
 </header>
 
-<style>
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-
+<style lang="scss">
 	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
+		padding: 0.8rem 2rem;
 
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
 
-	path {
-		fill: var(--background);
-	}
+			li {
+				list-style: none;
+				padding: 0 1rem;
 
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li[aria-current='page']::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-
-	a:hover {
-		color: var(--color-theme-1);
+				a {
+					text-decoration: none;
+				}
+			}
+		}
 	}
 </style>

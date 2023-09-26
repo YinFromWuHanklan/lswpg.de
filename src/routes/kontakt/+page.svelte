@@ -3,19 +3,34 @@
 	<meta name="description" content="Kontakt" />
 </svelte:head>
 
-<div class="text-column">
-	<h1>Kontakt</h1>
+	<div class="intro">
+		<h1>Kontakt</h1>
+	</div>
 
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
+	<div class="content">
+		<div>Bild</div>
+		<div>Kontaktdaten etc.</div>
+		<div>Bild</div>
+	</div>
 
-	<pre>npm create svelte@latest</pre>
+<style lang="scss">
+	.intro {
+		background-image: url('$lib/images/telephone-586266_1920.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 30vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-</div>
+	.content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 2rem;
+		padding: 2rem;
+		color: #FFF;
+	}
+</style>
+	

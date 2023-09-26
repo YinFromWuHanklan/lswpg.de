@@ -3,9 +3,11 @@
 	<meta name="description" content="About us" />
 </svelte:head>
 
-<h1>About us</h1>
+<div class="intro">
+	<h1>About us</h1>
+</div>
 
-<div>
+<div class="content">
 	<p>
 		Unsere Kanzlei zeichnet sich durch eine dynamische Struktur aus. Mit fundiertem Fachwissen und Leidenschaft für die Prüfung und Bewertung von Unternehmen in verschiedenen Wirtschaftszweigen sind wir Ihr verlässlicher Ansprechpartner.
 	</p>
@@ -21,11 +23,20 @@
 </div>
 
 <style lang="scss">
-	div {
+	.intro {
+		background-image: url('$lib/images/business-2846221_1920.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 30vh;
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+	}
+
+	.content {
 		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-		background-color: #00558e; // ToDo variable!
+		margin: 2rem auto;
+		background-color: #00558e; // secondary color, To Do
 		padding: 2rem;
 	}
 </style>
