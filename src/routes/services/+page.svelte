@@ -3,7 +3,9 @@
 	<meta name="description" content="Services" />
 </svelte:head>
 
-<h1>Services</h1>
+<div class="intro">
+	<h1>Services</h1>
+</div>
 
 <div class="service_wrap">
 	<div class="service_headline">
@@ -75,6 +77,20 @@
 
 
 <style lang="scss">
+
+
+@import '../global.scss';
+
+	.intro {
+		background-image: url('$lib/images/computer-820281_1920.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 30vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.service_wrap {
 		width: 80%;
 		margin-left: auto;
