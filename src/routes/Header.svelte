@@ -1,122 +1,48 @@
 <script>
-	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
+	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
-
-	<nav>
-		<ul>
-			<li>
-				<a href="/">Home</a>
-			</li>
-			<li>
-				<a href="/about-us">About us</a>
-			</li>
-			<li>
-				<a href="/services">Services</a>
-			</li>
-			<li>
-				<a href="/kooperationen">Kooperationen</a>
-			</li>
-			<li>
-				<a href="/kontakt">Kontakt</a>
-			</li>
-		</ul>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+		  <a class="navbar-brand" href="/">Linner Seidemann Wirtschaftsprüfung</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+			  <li class="nav-item active">
+				<a class="nav-link" href="/">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/about-us">About us</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/services">Services</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/kooperationen">Kooperationen</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/kontakt">Kontakt</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
 	</nav>
 </header>
 
-<style>
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-
+<style lang="scss">
+	@import './global.scss';
 	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
+		background-color: $primary;
 
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
+		.container {
 
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li[aria-current='page']::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-
-	a:hover {
-		color: var(--color-theme-1);
+			.nav-link,
+			a {
+				color: #FFF;
+			}
+		}
 	}
 </style>
