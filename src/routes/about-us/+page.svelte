@@ -4,7 +4,9 @@
 </svelte:head>
 
 <div class="intro">
-	<h1>About us</h1>
+	<div class="shadowbox">
+		<h1>About us</h1>
+	</div>
 </div>
 
 <div class="content">
@@ -27,16 +29,25 @@
 		background-image: url('$lib/images/business-2846221_1920.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
+		// width: 90vw;
 		height: 30vh;
-		display: flex;
-    	align-items: center;
-    	justify-content: center;
+
+		.shadowbox {
+			background-color: #252d36;
+			opacity: 0.6;
+			// width: 90vw;
+			height: 30vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		
+		}
 	}
 
 	.content {
 		width: 80%;
 		margin: 2rem auto;
-		background-color: #00558e; // secondary color, To Do
+		border: 1px solid #FFF;
 		padding: 2rem;
 	}
 </style>

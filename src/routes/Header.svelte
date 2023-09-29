@@ -1,8 +1,11 @@
 <script>
 	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
 
-	function testFunction(event) {
-		event.console.log("Hello");
+	// To Do!!
+
+	function handleClick(event) {
+		let navi_list = document.querySelector('.nav_mobile_list');
+		navi_list.classList.add("visible");
 	}
 </script>
 
@@ -27,7 +30,7 @@
 		</ul>
 
 		<div class="nav_mobile">
-			<button class="toggler" on:click={testFunction}>
+			<button class="toggler" on:click={handleClick}>
 				<div class="bar1"></div>
   				<div class="bar2"></div>
   				<div class="bar3"></div>
@@ -69,9 +72,15 @@
 			li {
 				list-style: none;
 				padding: 0 1rem;
+				font-family: 'Libre Baskerville', serif;
 
 				a {
 					text-decoration: none;
+					color: #FFF;
+
+					&:hover {
+						color: #db5461;
+					}
 				}
 			}
 		}
@@ -97,7 +106,15 @@
 				}
 
 				ul {
-					display: none;
+					// display: none;
+					li {
+						list-style: none;
+						font-family: 'Libre Baskerville', serif;
+
+						a {
+							color: #FFF;
+						}
+					}
 				}
 
 				.visible {
@@ -105,17 +122,17 @@
 				}
 
 
-				.change {
-						.bar1 {
-							transform: translate(0, 11px) rotate(-45deg);
-						}
-						.bar2 {
-							opacity: 0;
-						}
-						.bar3 {
-							transform: translate(0, -11px) rotate(45deg);
-						}
-					}
+				// .change {
+				// 		.bar1 {
+				// 			transform: translate(0, 11px) rotate(-45deg);
+				// 		}
+				// 		.bar2 {
+				// 			opacity: 0;
+				// 		}
+				// 		.bar3 {
+				// 			transform: translate(0, -11px) rotate(45deg);
+				// 		}
+				// }
 			}
 		}
 	}

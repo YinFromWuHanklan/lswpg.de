@@ -30,12 +30,19 @@ h1,
 h2 {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
+    line-height: 2rem;
 }
 
-p {
+p,
+li {
     font-family: 'Barlow', sans-serif;
+    line-height: 1.5rem;
 }
 
 a {
     color: $highligthing;
+}
+
+li {
+    margin-top: 1rem;;
 }
