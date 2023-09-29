@@ -1,8 +1,8 @@
 <script>
 	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
 
-	function testFunction(e) {
-		e.classList.toggle("change");
+	function testFunction(event) {
+		event.console.log("Hello");
 	}
 </script>
 
@@ -32,7 +32,7 @@
   				<div class="bar2"></div>
   				<div class="bar3"></div>
 			</button>
-			<ul>
+			<ul class="nav_mobile_list">
 				<li>
 					<a class="nav-link" href="/">Home</a>
 				</li>
@@ -84,6 +84,7 @@
   				cursor: pointer;
 
 				.toggler {
+
 					.bar1,
 					.bar2,
 					.bar3 {
@@ -93,6 +94,14 @@
 						margin: 6px 0;
 						transition: 0.4s;
 					}
+				}
+
+				ul {
+					display: none;
+				}
+
+				.visible {
+					display: block;
 				}
 
 
