@@ -4,7 +4,9 @@
 </svelte:head>
 
 <div class="intro">
-	<h1>Services</h1>
+	<div class="shadowbox">
+		<h1>Services</h1>
+	</div>
 </div>
 
 <div class="service_wrap">
@@ -82,29 +84,43 @@
 		background-image: url('$lib/images/computer-820281_1920.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
+		// width: 90vw;
 		height: 30vh;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+
+		.shadowbox {
+			background-color: #252d36;
+			opacity: 0.6;
+			// width: 90vw;
+			height: 30vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		
+		}
 	}
 
 	.service_wrap {
-		width: 80%;
+		width: 85%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 2rem;;
-		background-color: #00558e; // ToDo variable!
+		border: 1px solid #FFF;
 		padding: 2rem;
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 
 		.service_headline {
 			justify-content: center;
-			flex-grow: 1;
+			width: 40%;
 		}
 
 		.service_content {
-			flex-grow: 8;
+			width: 60%;
+		}
+
+		@media (max-width: 1056px) {
+			flex-direction: column;
 		}
 	}
 </style>
