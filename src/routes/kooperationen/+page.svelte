@@ -19,9 +19,9 @@
 <h2>Unsere Kooperationspartner</h2>
 
 <div class="content">
-	<img src={severn} alt="Severn" height=250>
-	<img src={oro} alt="Oro services" height=250>
-	<img src={cdi} alt="cd Invest" height=250>
+	<img src={severn} alt="Severn" height=200>
+	<img src={oro} alt="Oro services" height=200>
+	<img src={cdi} alt="cd Invest" height=200>
 	<img src={trepte} alt="cd Invest" height=250>
 </div>
 
@@ -49,6 +49,7 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: center;
 
 		img {
 			margin: 1rem 1.5rem;
