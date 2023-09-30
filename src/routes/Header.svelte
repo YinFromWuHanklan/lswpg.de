@@ -64,6 +64,7 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
+			margin-top: 0;
 
 			@media (max-width: 1056px) {
 				display: none;
@@ -73,6 +74,10 @@
 				list-style: none;
 				padding: 0 1rem;
 				font-family: 'Libre Baskerville', serif;
+
+				&+li {
+					border-left: 1px solid #FFF;
+				}
 
 				a {
 					text-decoration: none;
@@ -113,6 +118,7 @@
 
 						a {
 							color: #FFF;
+							text-decoration: none;
 						}
 					}
 				}
