@@ -16,9 +16,6 @@
 				<a class="nav-link" href="/">Home</a>
 			</li>
 			<li>
-				<a class="nav-link" href="/about-us">About us</a>
-			</li>
-			<li>
 				<a class="nav-link" href="/services">Services</a>
 			</li>
 			<li>
@@ -38,10 +35,6 @@
 			<ul class="nav_mobile_list">
 				<li>
 					<a class="nav-link" href="/">Home</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/about-us">About us</a>
-				</li>
 				<li>
 					<a class="nav-link" href="/services">Services</a>
 				</li>
