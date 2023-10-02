@@ -17,13 +17,18 @@
 	<div class="content">
 		<div>
 			<img src={kontaktseidemann} alt="Kontakt Seidemann" height=250>
+			<div class="cta_link"><a href="/" target="_blank" rel=”noreferrer”>Xing</a></div>
+			<div class="cta_link"><a href="/" target="_blank" rel=”noreferrer”>LinkedIn</a></div>
 		</div>
 		<div class="cta_text">
 			<h2>Kontaktieren Sie uns!</h2>
 			<p>Sie haben Fragen, ein konkretes Anliegen oder möchten direkt mit uns in Kontakt treten? Wir freuen uns auf Ihre Nachricht und melden uns schnellstmöglich bei Ihnen.</p>
+			<div class="cta_link"><a href="mailto:info@lswpg.de">info@lswpg.de</a></div>
 		</div>
 		<div>
 			<img src={kontaktlinner} alt="Kontakt Linner" height=250>
+			<div class="cta_link"><a href="/" target="_blank" rel=”noreferrer”>Xing</a></div>
+			<div class="cta_link"><a href="/" target="_blank" rel=”noreferrer”>LinkedIn</a></div>
 		</div>
 	</div>
 
@@ -58,6 +63,23 @@
 		.cta_text {
 			padding: 0 1.5rem;
 		}
+
+		.cta_link {
+				padding: 1rem;
+				background-color: #db5461;
+				width: fit-content;
+				border: 1px solid #FFF;
+				border-radius: 10px;
+				margin: 1rem 0;
+
+				&:hover {
+					border: 2px solid #FFF;
+				}
+
+				a {
+					color: #FFF;
+				}
+			}
 	}
 </style>
 	
