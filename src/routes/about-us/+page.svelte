@@ -49,5 +49,11 @@
 		margin: 2rem auto;
 		border: 1px solid #FFF;
 		padding: 2rem;
+
+		@media (max-width: 672px) {
+			width: fit-content;
+			margin: 1rem;
+			padding: 1.2rem;
+		}
 	}
 </style>
