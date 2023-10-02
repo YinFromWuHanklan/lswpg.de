@@ -80,7 +80,6 @@
 				}
 
 				a {
-					text-decoration: none;
 					color: #FFF;
 
 					&:hover {
@@ -118,7 +117,6 @@
 
 						a {
 							color: #FFF;
-							text-decoration: none;
 						}
 					}
 				}
