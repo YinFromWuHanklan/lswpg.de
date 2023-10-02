@@ -129,5 +129,16 @@
 				width: 100%;
 			}
 		}
+
+		@media (max-width: 672px) {
+			width: fit-content;
+			margin: 1rem;
+			padding: 1rem;
+
+			.service_content {
+				padding-left: 1.5rem;
+				margin-top: 0;
+			}
+		}
 	}
 </style>
