@@ -34,6 +34,10 @@
 		width: 100%;
 	}
 
+	p {
+		padding: 2rem;
+	}
+
 	.welcome {
 		display: block;
 		position: relative;

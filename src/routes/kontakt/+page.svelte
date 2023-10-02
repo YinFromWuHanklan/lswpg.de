@@ -15,20 +15,29 @@
 	</div>
 
 	<div class="content">
-		<div>
+		<div class="lg">
 			<img src={kontaktseidemann} alt="Kontakt Seidemann" height=250>
-			<div class="cta_link"><a href="/" target="_blank" rel=”noreferrer”>Xing</a></div>
-			<div class="cta_link"><a href="/" target="_blank" rel=”noreferrer”>LinkedIn</a></div>
+			<div class="cta_link"><a href="https://www.xing.com/profile/Andreas_Seidemann3" target="_blank" rel=”noreferrer”>Xing</a></div>
+			<div class="cta_link"><a href="https://www.linkedin.com/in/andreas-seidemann-632226229/" target="_blank" rel=”noreferrer”>LinkedIn</a></div>
 		</div>
 		<div class="cta_text">
 			<h2>Kontaktieren Sie uns!</h2>
 			<p>Sie haben Fragen, ein konkretes Anliegen oder möchten direkt mit uns in Kontakt treten? Wir freuen uns auf Ihre Nachricht und melden uns schnellstmöglich bei Ihnen.</p>
 			<div class="cta_link"><a href="mailto:info@lswpg.de">info@lswpg.de</a></div>
 		</div>
-		<div>
+		<div class="mobile contact_element">
+			<img src={kontaktseidemann} alt="Kontakt Seidemann" height=250>
+			<div class="mobile_wrap">
+				<div class="cta_link"><a href="https://www.xing.com/profile/Andreas_Seidemann3" target="_blank" rel=”noreferrer”>Xing</a></div>
+				<div class="cta_link"><a href="https://www.linkedin.com/in/andreas-seidemann-632226229/" target="_blank" rel=”noreferrer”>LinkedIn</a></div>
+			</div>
+		</div>
+		<div class="contact_element">
 			<img src={kontaktlinner} alt="Kontakt Linner" height=250>
-			<div class="cta_link"><a href="/" target="_blank" rel=”noreferrer”>Xing</a></div>
-			<div class="cta_link"><a href="/" target="_blank" rel=”noreferrer”>LinkedIn</a></div>
+			<div class="mobile_wrap">
+				<div class="cta_link"><a href="https://www.xing.com/profile/Corinna_Linner/cv" target="_blank" rel=”noreferrer”>Xing</a></div>
+				<div class="cta_link"><a href="https://www.linkedin.com/in/corinna-linner-08483153/" target="_blank" rel=”noreferrer”>LinkedIn</a></div>
+			</div>
 		</div>
 	</div>
 
@@ -60,26 +69,50 @@
 		padding: 2rem;
 		color: #FFF;
 
+		@media (max-width: 1055px) {
+			flex-direction: column;
+
+			.contact_element {
+				display: flex;
+				flex-direction: row;
+				padding: 1rem;
+
+				.mobile_wrap {
+					margin-left: 1rem;
+				}
+			}
+		}
+
 		.cta_text {
 			padding: 0 1.5rem;
 		}
 
 		.cta_link {
-				padding: 1rem;
-				background-color: #db5461;
-				width: fit-content;
-				border: 1px solid #FFF;
-				border-radius: 10px;
-				margin: 1rem 0;
-
-				&:hover {
-					border: 2px solid #FFF;
-				}
-
-				a {
-					color: #FFF;
-				}
+			padding: 1rem;
+			background-color: #db5461;
+			width: fit-content;
+			border: 1px solid #FFF;
+			border-radius: 10px;
+			margin: 1rem 0;
+			&:hover {
+				border: 2px solid #FFF;
 			}
+			a {
+				color: #FFF;
+			}
+		}
+
+		.lg {
+			@media (max-width: 1055px) {
+				display: none;
+			}
+		}
+
+		.mobile {
+			@media (min-width: 1056px) {
+				display: none;
+			}
+		}
 	}
 </style>
 	

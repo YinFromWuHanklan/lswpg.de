@@ -119,8 +119,15 @@
 			width: 60%;
 		}
 
-		@media (max-width: 1056px) {
+		@media (max-width: 1055px) {
 			flex-direction: column;
+
+			.service_headline {
+				width: 100%;
+			}
+			.service_content {
+				width: 100%;
+			}
 		}
 	}
 </style>
