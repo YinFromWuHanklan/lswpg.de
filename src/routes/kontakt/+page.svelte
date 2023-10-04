@@ -17,7 +17,6 @@
 	<div class="content">
 		<div class="lg">
 			<img src={kontaktseidemann} alt="Kontakt Seidemann" height=250>
-			<div class="cta_link"><a href="https://www.xing.com/profile/Andreas_Seidemann3" target="_blank" rel=”noreferrer”>Xing</a></div>
 			<div class="cta_link"><a href="https://www.linkedin.com/in/andreas-seidemann-632226229/" target="_blank" rel=”noreferrer”>LinkedIn</a></div>
 		</div>
 		<div class="cta_text">
@@ -28,14 +27,12 @@
 		<div class="mobile contact_element">
 			<img src={kontaktseidemann} alt="Kontakt Seidemann" height=250>
 			<div class="mobile_wrap">
-				<div class="cta_link"><a href="https://www.xing.com/profile/Andreas_Seidemann3" target="_blank" rel=”noreferrer”>Xing</a></div>
 				<div class="cta_link"><a href="https://www.linkedin.com/in/andreas-seidemann-632226229/" target="_blank" rel=”noreferrer”>LinkedIn</a></div>
 			</div>
 		</div>
 		<div class="contact_element">
 			<img src={kontaktlinner} alt="Kontakt Linner" height=250>
 			<div class="mobile_wrap">
-				<div class="cta_link"><a href="https://www.xing.com/profile/Corinna_Linner/cv" target="_blank" rel=”noreferrer”>Xing</a></div>
 				<div class="cta_link"><a href="https://www.linkedin.com/in/corinna-linner-08483153/" target="_blank" rel=”noreferrer”>LinkedIn</a></div>
 			</div>
 		</div>

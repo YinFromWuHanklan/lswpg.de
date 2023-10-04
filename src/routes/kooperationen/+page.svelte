@@ -20,9 +20,6 @@
 
 <div class="content">
 	<img src={severn} alt="Severn" height=200>
-	<img src={oro} alt="Oro services" height=200>
-	<img src={cdi} alt="cd Invest" height=200>
-	<img src={trepte} alt="cd Invest" height=250>
 </div>
 
 <style lang="scss">
