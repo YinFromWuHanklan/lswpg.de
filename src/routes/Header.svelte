@@ -1,12 +1,7 @@
 <script>
 	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
 
-	// To Do!!
-
-	function handleClick(event) {
-		let navi_list = document.querySelector('.nav_mobile_list');
-		navi_list.classList.add("visible");
-	}
+	let isOpen = false;
 </script>
 
 <header>
@@ -14,9 +9,6 @@
 		<ul class="nav_lg">
 			<li>
 				<a class="nav-link" href="/">Home</a>
-			</li>
-			<li>
-				<a class="nav-link" href="/about-us">About us</a>
 			</li>
 			<li>
 				<a class="nav-link" href="/services">Services</a>
@@ -30,18 +22,15 @@
 		</ul>
 
 		<div class="nav_mobile">
-			<button class="toggler" on:click={handleClick}>
+			<button class="toggler" on:click={() => (isOpen = !isOpen)}>
 				<div class="bar1"></div>
   				<div class="bar2"></div>
   				<div class="bar3"></div>
 			</button>
+			{#if isOpen}
 			<ul class="nav_mobile_list">
 				<li>
 					<a class="nav-link" href="/">Home</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/about-us">About us</a>
-				</li>
 				<li>
 					<a class="nav-link" href="/services">Services</a>
 				</li>
@@ -52,6 +41,7 @@
 					<a class="nav-link" href="/kontakt">Kontakt</a>
 				</li>
 			</ul>
+			{/if}
 		</div>
 	</nav>
 </header>
