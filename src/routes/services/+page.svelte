@@ -105,7 +105,7 @@
 		margin-right: auto;
 		margin-top: 2rem;;
 		border: 1px solid #FFF;
-		padding: 2rem;
+		padding: 1.4rem;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -117,6 +117,10 @@
 
 		.service_content {
 			width: 60%;
+
+			li {
+				margin-top: 0;
+			}
 		}
 
 		@media (max-width: 1055px) {
