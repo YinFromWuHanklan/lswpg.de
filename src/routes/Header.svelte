@@ -49,6 +49,7 @@
 <style lang="scss">
 	nav {
 		padding: 0.8rem 2rem;
+		background-color: #00336A;
 
 		.nav_lg {
 			display: flex;
@@ -64,6 +65,7 @@
 				list-style: none;
 				padding: 0 1rem;
 				font-family: 'Libre Baskerville', serif;
+				font-size: 1.2rem;
 
 				&+li {
 					border-left: 1px solid #FFF;

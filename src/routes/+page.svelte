@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Linner Seidemann Wirtschaftsprüfung</title>
+	<meta name="description" content="Linner Seidemann Wirtschaftsprüfung" />
 </svelte:head>
 
 <section>
@@ -16,7 +16,8 @@
 		</span>
 	</h1>
 
-	<div class="content">
+	<div class="outer_box">
+		<div class="inner_box">
 			<p>
 				Unsere Kanzlei zeichnet sich durch eine dynamische Struktur aus. Mit fundiertem Fachwissen und Leidenschaft für die Prüfung und Bewertung von Unternehmen in verschiedenen Wirtschaftszweigen sind wir Ihr verlässlicher Ansprechpartner.
 			</p>
@@ -29,10 +30,11 @@
 			<p>
 				Unser Engagement für Exzellenz spiegelt sich in der Qualität unserer Arbeit wider. Wir sind stolz darauf, unseren Mandanten durch fundierte Analysen, klare Kommunikation und effiziente Prozesse zu unterstützen.
 			</p>
+		</div>
 	</div>
 </section>
 
-<style>
+<style lang="scss">
 	section {
 		display: flex;
 		flex-direction: column;
@@ -61,16 +63,24 @@
 		display: block;
 	}
 
-	.content {
+	.outer_box {
 		width: 80%;
 		margin: 2rem auto;
-		border: 1px solid #FFF;
-		padding: 2rem;
+		border: 4px solid #00336A;
+		border-radius: 5px;
 
 		@media (max-width: 672px) {
 			width: fit-content;
 			margin: 1rem;
 			padding: 1.2rem;
+		}
+
+		.inner_box {
+			border: 1px solid #FFF;
+			border-radius: 2px;
+			background-color: #00336A;
+			color: #FFF;
+			padding: 1.5rem;
 		}
 	}
 </style>
