@@ -11,11 +11,20 @@
 	</main>
 
 	<footer>
-		<p>&copy; 2023 Linner | Seidemann PartG mbB Wirtschaftsprüfungsgesellschaft &bull; <a href="/impressum">Impressum</a> &bull; <a href="/datenschutz">Datenschutz</a></p>
+		<div class="footer_lg">
+			<p>&copy; 2023 Linner | Seidemann PartG mbB Wirtschaftsprüfungsgesellschaft <span>&bull;</span> <a href="/impressum">Impressum</a> <span>&bull;</span> <a href="/datenschutz">Datenschutz</a></p>
+		</div>
+		<div class="footer_mobile">
+			<p>&copy; 2023 Linner | Seidemann PartG mbB Wirtschaftsprüfungsgesellschaft</p>
+			<ul>
+				<li><a href="/impressum">Impressum</a></li>
+				<li><a href="/datenschutz">Datenschutz</a></li>
+			</ul>
+		</div>
 	</footer>
 </div>
 
-<style>
+<style lang="scss">
 	.app {
 		display: flex;
 		flex-direction: column;
@@ -37,16 +46,64 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 12px;
-	}
+		padding: 0.8rem;
+		background-color: #00336A;
+		color: #FFF;
+		margin-top: 2rem;
 
-	footer a {
-		font-weight: bold;
-	}
+		p {
+			margin: 0;
 
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
+			span {
+				margin: 0.8rem;
+			}
+		}
+
+		.footer_lg {
+			@media (max-width: 672px) {
+				display: none;
+			}
+
+			a {
+				color: #FFF;
+
+				&:hover {
+					color: #db5461;
+				}
+			}
+		}
+
+		.footer_mobile {
+			@media (min-width: 673px) {
+				display: none;
+			}
+
+			@media (max-width: 672px) {
+				display: flex;
+				flex-direction: column;
+
+				p {
+					text-align: center;
+				}
+
+				ul {
+					padding-left: 0;
+    				display: flex;
+    				flex-direction: column;
+    				text-align: center;
+					margin-top: 0.5rem;
+
+					li {
+						border-top: 1px solid #FFF;
+						list-style: none;
+						padding-top: 1rem;
+
+						a {
+							color: #FFF;
+						}
+					}
+				}
+			}
 		}
 	}
 </style>

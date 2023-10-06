@@ -71,8 +71,7 @@
 
 		@media (max-width: 672px) {
 			width: fit-content;
-			margin: 1rem;
-			padding: 1.2rem;
+			margin: 0.8rem;
 		}
 
 		.inner_box {
