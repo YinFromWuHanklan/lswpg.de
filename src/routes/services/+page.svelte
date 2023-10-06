@@ -115,6 +115,11 @@
 		border: 4px solid #00336A;
 		border-radius: 5px;
 
+		@media (max-width: 672px) {
+			width: fit-content;
+			margin: 0.8rem;
+		}
+
 		.service_wrap {
 			border: 1px solid #FFF;
 			border-radius: 2px;
@@ -157,8 +162,7 @@
 
 			@media (max-width: 672px) {
 				width: fit-content;
-				margin: 1rem;
-				padding: 1rem;
+				padding: 1.8rem 1rem 1rem;
 
 				.service_content {
 					padding-left: 1.5rem;

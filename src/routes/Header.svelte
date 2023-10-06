@@ -56,6 +56,7 @@
 			flex-direction: row;
 			justify-content: flex-end;
 			margin-top: 0;
+			margin-bottom: 0.5rem;
 
 			@media (max-width: 1056px) {
 				display: none;
@@ -66,6 +67,7 @@
 				padding: 0 1rem;
 				font-family: 'Libre Baskerville', serif;
 				font-size: 1.2rem;
+				margin-top: 0.5rem;
 
 				&+li {
 					border-left: 1px solid #FFF;
@@ -102,7 +104,6 @@
 				}
 
 				ul {
-					// display: none;
 					li {
 						list-style: none;
 						font-family: 'Libre Baskerville', serif;
