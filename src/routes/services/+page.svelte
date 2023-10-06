@@ -116,7 +116,7 @@
 		border-radius: 5px;
 
 		@media (max-width: 672px) {
-			width: fit-content;
+			width: auto;
 			margin: 0.8rem;
 		}
 
@@ -161,7 +161,7 @@
 			}
 
 			@media (max-width: 672px) {
-				width: fit-content;
+				width: auto;
 				padding: 1.8rem 1rem 1rem;
 
 				.service_content {
