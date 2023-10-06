@@ -65,6 +65,7 @@
 				list-style: none;
 				padding: 0 1rem;
 				font-family: 'Libre Baskerville', serif;
+				font-size: 1.2rem;
 
 				&+li {
 					border-left: 1px solid #FFF;

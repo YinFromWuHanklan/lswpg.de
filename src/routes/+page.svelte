@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Linner Seidemann Wirtschaftsprüfung</title>
+	<meta name="description" content="Linner Seidemann Wirtschaftsprüfung" />
 </svelte:head>
 
 <section>

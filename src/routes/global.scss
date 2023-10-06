@@ -37,6 +37,10 @@ li {
     line-height: 1.5rem;
 }
 
+p {
+    hyphens: auto;
+}
+
 a {
     color: $highligthing;
     text-decoration: none;
