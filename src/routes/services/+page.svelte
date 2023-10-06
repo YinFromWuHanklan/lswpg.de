@@ -116,7 +116,7 @@
 		border-radius: 5px;
 
 		@media (max-width: 672px) {
-			width: fit-content;
+			width: auto;
 			margin: 0.8rem;
 		}
 
@@ -145,7 +145,16 @@
 				width: 60%;
 
 				li {
-					margin-top: 0;
+					margin-top: 0.8rem;
+
+					ul {
+						padding-left: 1rem;
+
+						li {
+							margin-top: 0;
+							list-style-type: disclosure-closed;
+						}
+					}
 				}
 			}
 
@@ -161,7 +170,7 @@
 			}
 
 			@media (max-width: 672px) {
-				width: fit-content;
+				width: auto;
 				padding: 1.8rem 1rem 1rem;
 
 				.service_content {

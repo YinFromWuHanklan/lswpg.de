@@ -58,7 +58,7 @@
 			margin-top: 0;
 			margin-bottom: 0.5rem;
 
-			@media (max-width: 1056px) {
+			@media (max-width: 672px) {
 				display: none;
 			}
 
@@ -86,11 +86,14 @@
 		.nav_mobile {
 			display: none;
 
-			@media (max-width: 1056px) {
+			@media (max-width: 672px) {
 				display: inline-block;
   				cursor: pointer;
+				width: 100%;
 
 				.toggler {
+					background-color: #00336A;
+					border: none;
 
 					.bar1,
 					.bar2,
@@ -104,9 +107,17 @@
 				}
 
 				ul {
+					padding-left: 0;
+					text-align: center;
+
 					li {
 						list-style: none;
 						font-family: 'Libre Baskerville', serif;
+
+						&+li {
+							border-top: 1px solid #FFF;
+							padding-top: 1rem;
+						}
 
 						a {
 							color: #FFF;
@@ -117,19 +128,6 @@
 				.visible {
 					display: block;
 				}
-
-
-				// .change {
-				// 		.bar1 {
-				// 			transform: translate(0, 11px) rotate(-45deg);
-				// 		}
-				// 		.bar2 {
-				// 			opacity: 0;
-				// 		}
-				// 		.bar3 {
-				// 			transform: translate(0, -11px) rotate(45deg);
-				// 		}
-				// }
 			}
 		}
 	}
