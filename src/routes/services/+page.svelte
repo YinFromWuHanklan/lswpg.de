@@ -145,7 +145,16 @@
 				width: 60%;
 
 				li {
-					margin-top: 0;
+					margin-top: 0.8rem;
+
+					ul {
+						padding-left: 1rem;
+
+						li {
+							margin-top: 0;
+							list-style-type: disclosure-closed;
+						}
+					}
 				}
 			}
 
