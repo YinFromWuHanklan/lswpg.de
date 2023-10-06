@@ -49,6 +49,7 @@
 <style lang="scss">
 	nav {
 		padding: 0.8rem 2rem;
+		background-color: #00336A;
 
 		.nav_lg {
 			display: flex;

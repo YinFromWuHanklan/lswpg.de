@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>&copy; 2023 Linner | Seidemann PartG mbB Wirtschaftsprüfungsgesellschaft | <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
+		<p>&copy; 2023 Linner | Seidemann PartG mbB Wirtschaftsprüfungsgesellschaft &bull; <a href="/impressum">Impressum</a> &bull; <a href="/datenschutz">Datenschutz</a></p>
 	</footer>
 </div>
 
