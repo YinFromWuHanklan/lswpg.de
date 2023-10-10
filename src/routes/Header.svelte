@@ -6,22 +6,26 @@
 
 <header>
 	<nav>
-		<ul class="nav_lg">
-			<li>
-				<a class="nav-link" href="/">Home</a>
-			</li>
-			<li>
-				<a class="nav-link" href="/services">Services</a>
-			</li>
-			<li>
-				<a class="nav-link" href="/kooperationen">Kooperationen</a>
-			</li>
-			<li>
-				<a class="nav-link" href="/kontakt">Kontakt</a>
-			</li>
-		</ul>
+		<div class="nav_lg">
+			<img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=50 />
+			<ul>
+				<li>
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/services">Services</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/kooperationen">Kooperationen</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/kontakt">Kontakt</a>
+				</li>
+			</ul>
+		</div>
 
 		<div class="nav_mobile">
+			<img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=50 />
 			<button class="toggler" on:click={() => (isOpen = !isOpen)}>
 				<div class="bar1"></div>
   				<div class="bar2"></div>
@@ -54,30 +58,36 @@
 		.nav_lg {
 			display: flex;
 			flex-direction: row;
-			justify-content: flex-end;
-			margin-top: 0;
-			margin-bottom: 0.5rem;
+			justify-content: space-between;
 
 			@media (max-width: 672px) {
 				display: none;
 			}
 
-			li {
-				list-style: none;
-				padding: 0 1rem;
-				font-family: 'Libre Baskerville', serif;
-				font-size: 1.2rem;
-				margin-top: 0.5rem;
+			ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				margin-top: 0;
+				margin-bottom: 0.5rem;
 
-				&+li {
-					border-left: 1px solid #FFF;
-				}
+				li {
+					list-style: none;
+					padding: 0 1rem;
+					font-family: 'Libre Baskerville', serif;
+					font-size: 1.2rem;
+					margin-top: 0.5rem;
 
-				a {
-					color: #FFF;
+					&+li {
+						border-left: 1px solid #FFF;
+					}
 
-					&:hover {
-						color: #db5461;
+					a {
+						color: #FFF;
+
+						&:hover {
+							color: #db5461;
+						}
 					}
 				}
 			}
@@ -91,7 +101,12 @@
   				cursor: pointer;
 				width: 100%;
 
+				img {
+					float: left;
+				}
+
 				.toggler {
+					float: right;
 					background-color: #00336A;
 					border: none;
 
@@ -109,6 +124,7 @@
 				ul {
 					padding-left: 0;
 					text-align: center;
+					margin-top: 50px;
 
 					li {
 						list-style: none;
