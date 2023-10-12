@@ -27,14 +27,12 @@
 		background-image: url('$lib/images/laptop-1205256_1920.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
-		// width: 90vw;
-		height: 30vh;
+		height: 40vh;
 
 		.shadowbox {
 			background-color: #252d36;
 			opacity: 0.6;
-			// width: 90vw;
-			height: 30vh;
+			height: 40vh;
 			display: flex;
 			align-items: center;
 			justify-content: center;

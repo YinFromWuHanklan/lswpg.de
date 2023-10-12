@@ -49,12 +49,12 @@
 		background-image: url('$lib/images/telephone-586266_1920.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 30vh;
+		height: 40vh;
 
 		.shadowbox {
 			background-color: #252d36;
 			opacity: 0.6;
-			height: 30vh;
+			height: 40vh;
 			display: flex;
 			align-items: center;
 			justify-content: center;
