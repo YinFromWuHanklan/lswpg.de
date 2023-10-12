@@ -7,7 +7,7 @@
 <header>
 	<nav>
 		<div class="nav_lg">
-			<img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=50 />
+			<a href="/"><img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=40 /></a>
 			<ul>
 				<li>
 					<a class="nav-link" href="/">Home</a>
@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="nav_mobile">
-			<img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=50 />
+			<a href="/"><img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=45 /></a>
 			<button class="toggler" on:click={() => (isOpen = !isOpen)}>
 				<div class="bar1"></div>
   				<div class="bar2"></div>
@@ -54,6 +54,10 @@
 	nav {
 		padding: 0.8rem 2rem;
 		background-color: #00336A;
+
+		@media (max-width: 672px) {
+			padding: 0.8rem 1rem;
+		}
 
 		.nav_lg {
 			display: flex;
