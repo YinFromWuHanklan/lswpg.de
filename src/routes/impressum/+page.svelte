@@ -44,7 +44,7 @@
 		</ul>
 		<p>
 			<b>Informationen zu diesen Regelungen finden Sie auf den folgenden Internetseiten:</b><br />
-			Wirtschaftsprüferkammer: <a href="http://www.wpk.de">www.wpk.de</a> Institut der Wirtschaftsprüfer: <a href="http://www.idw.de">www.idw.de</a>
+			Wirtschaftsprüferkammer: <a href="http://www.wpk.de" rel=”noopener noreferrer”>www.wpk.de</a> Institut der Wirtschaftsprüfer: <a href="http://www.idw.de" rel=”noopener noreferrer”>www.idw.de</a>
 		</p>
 		<p>
 			<b>Haftungsausschluss:</b><br />

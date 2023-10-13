@@ -1,8 +1,7 @@
 <script>
 	import severn from '$lib/images/Severn-Logo.jpeg'
-	import oro from '$lib/images/Oro-Logo.jpeg'
-	import cdi from '$lib/images/Logo-CDI.png'
-	import trepte from '$lib/images/Logo_3-Trepte.jpeg'
+	import Intro from '../../lib/Intro.svelte';
+	import BgKooperationen from '$lib/images/intro-bg-kooperationen.jpg';
 </script>
 
 <svelte:head>
@@ -10,44 +9,44 @@
 	<meta name="description" content="Kooperationen" />
 </svelte:head>
 
-<div class="intro">
-	<div class="shadowbox">
-		<h1>Kooperationen</h1>
+<Intro>
+	<img slot="intro_bg" src={BgKooperationen} alt="Kooperationen Linner Seidemann Wirtschaftsprüfung" />
+</Intro>
+
+<section>
+	<h1>Unsere Kooperationspartner</h1>
+	
+	<div class="content">
+		<img src={severn} alt="Severn" height=200 class="partner_logo" />
 	</div>
-</div>
-
-<h2>Unsere Kooperationspartner</h2>
-
-<div class="content">
-	<img src={severn} alt="Severn" height=200>
-</div>
+</section>
 
 <style lang="scss">
-	.intro {
-		background-image: url('$lib/images/laptop-1205256_1920.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 40vh;
-
-		.shadowbox {
-			background-color: #252d36;
-			opacity: 0.6;
-			height: 40vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		
-		}
+	
+	img {
+		width: 100vw;
+		z-index: -1;
 	}
 
-	.content {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
+	section {
 
-		img {
-			margin: 1rem 1.5rem;
+		background-color: #FFF;
+
+		h1 {
+			margin-top: 2rem;
+		}
+
+		.content {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			.partner_logo {
+				margin: 1rem 1.5rem;
+				width: auto;
+				z-index: 1;
+			}
 		}
 	}
 </style>
