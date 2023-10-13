@@ -14,7 +14,7 @@
 </Intro>
 
 <section>
-	<h1>Unsere Kooperationspartner</h1>
+	<h1>Unsere Kooperations&shy;partner</h1>
 	
 	<div class="content">
 		<img src={severn} alt="Severn" height=200 class="partner_logo" />
@@ -29,18 +29,15 @@
 	}
 
 	section {
-
 		background-color: #FFF;
-
-		h1 {
-			margin-top: 2rem;
-		}
+		padding: 1rem;
 
 		.content {
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: center;
+			padding: 2rem 0;
 
 			.partner_logo {
 				margin: 1rem 1.5rem;
