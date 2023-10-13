@@ -127,11 +127,6 @@
 
 			ul {
 				padding-left: 1rem;
-				li {
-					ul {
-						//padding-left: 1rem;
-					}
-				}
 			}
 		}
 	}
