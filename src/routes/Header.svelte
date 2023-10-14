@@ -7,7 +7,6 @@
 <header>
 	<nav>
 		<div class="nav_lg">
-			<a href="/"><img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=40 /></a>
 			<ul>
 				<li>
 					<a class="nav-link" href="/">Home</a>
@@ -62,7 +61,7 @@
 		.nav_lg {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content: end;
 
 			@media (max-width: 672px) {
 				display: none;
