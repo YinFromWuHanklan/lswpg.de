@@ -57,7 +57,7 @@
 		flex-direction: row;
 		justify-content: center;
 		padding: 1rem 2rem;
-		width: 80%;
+		width: 60%;
 		margin: 0 auto;
 
 		.kontakt_photo {
@@ -93,6 +93,7 @@
 
 		@media (max-width: 1055px) {
 			flex-direction: column;
+			width: 80%;
 
 			.lg {
 				display: none;
