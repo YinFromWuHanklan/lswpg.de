@@ -1,5 +1,5 @@
 import { d as dev } from "../../../chunks/environment.js";
-const csr = dev;
+/* empty css                     */const csr = dev;
 const prerender = true;
 export {
   csr,

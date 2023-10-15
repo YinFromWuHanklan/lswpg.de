@@ -1,4 +1,4 @@
-const prerender = true;
+/* empty css                  */const prerender = true;
 export {
   prerender
 };

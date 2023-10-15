@@ -63,14 +63,6 @@
 			@media (max-width: 672px) {
 				display: none;
 			}
-
-			a {
-				color: #FFF;
-
-				&:hover {
-					color: #db5461;
-				}
-			}
 		}
 
 		.footer_mobile {
@@ -97,10 +89,6 @@
 						border-top: 1px solid #FFF;
 						list-style: none;
 						padding-top: 1rem;
-
-						a {
-							color: #FFF;
-						}
 					}
 				}
 			}

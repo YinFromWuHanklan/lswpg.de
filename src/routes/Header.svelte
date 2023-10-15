@@ -86,11 +86,7 @@
 					}
 
 					a {
-						color: #FFF;
-
-						&:hover {
-							color: #db5461;
-						}
+						text-decoration: none;
 					}
 				}
 			}
