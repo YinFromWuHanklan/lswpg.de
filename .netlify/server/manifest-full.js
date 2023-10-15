@@ -10,7 +10,7 @@ return {
 	assets: new Set(["favicon.png","robots.txt"]),
 	mimeTypes: {".png":"image/png",".txt":"text/plain"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.87c9f1e9.js","app":"_app/immutable/entry/app.4622fe71.js","imports":["_app/immutable/entry/start.87c9f1e9.js","_app/immutable/chunks/scheduler.e108d1fd.js","_app/immutable/chunks/singletons.f34ef7c9.js","_app/immutable/entry/app.4622fe71.js","_app/immutable/chunks/scheduler.e108d1fd.js","_app/immutable/chunks/index.60f45e3a.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.c1f38bb3.js","app":"_app/immutable/entry/app.835ff7a4.js","imports":["_app/immutable/entry/start.c1f38bb3.js","_app/immutable/chunks/scheduler.19461008.js","_app/immutable/chunks/singletons.c7deb6d8.js","_app/immutable/entry/app.835ff7a4.js","_app/immutable/chunks/scheduler.19461008.js","_app/immutable/chunks/index.71439af6.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -31,8 +31,8 @@ return {
 				endpoint: null
 			},
 			{
-				id: "/about-us",
-				pattern: /^\/about-us\/?$/,
+				id: "/bildrechte",
+				pattern: /^\/bildrechte\/?$/,
 				params: [],
 				page: { layouts: [0,], errors: [1,], leaf: 3 },
 				endpoint: null

@@ -3,9 +3,8 @@
 	<meta name="description" content="Impressum" />
 </svelte:head>
 
-	<h1>Impressum</h1>
-
-	<div class="wrapper">
+	<div class="legal_wrapper">
+		<h1>Impressum</h1>
 		<h2>Linner | Seidemann PartG mbB Wirtschaftsprüfungsgesellschaft</h2>
 		<p>
 			Arabellastraße 19 a<br />
@@ -58,12 +57,3 @@
 			der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
 		</p>
 	</div>
-
-
-	<style lang="scss">
-
-		.wrapper {
-			padding: 0.8rem;
-		}
-
-	</style>

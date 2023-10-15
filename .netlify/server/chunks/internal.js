@@ -47,10 +47,8 @@ const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.data_1(data_1);
   let $$settled;
   let $$rendered;
-  let previous_head = $$result.head;
   do {
     $$settled = true;
-    $$result.head = previous_head;
     {
       stores.page.set(page);
     }
@@ -168,7 +166,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1mm2gvw"
+  version_hash: "1mywdp2"
 };
 function get_hooks() {
   return {};

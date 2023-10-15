@@ -50,10 +50,28 @@ p {
 }
 
 a {
-    color: $highligthing;
-    text-decoration: none;
+    color: #FFF;
+    text-decoration: underline;
+    &:hover {
+        color: #db5461;
+    }
 }
 
 li {
     margin-top: 1rem;;
+}
+
+.legal_wrapper {
+    padding: 1rem;
+
+    h1,
+    h2,
+    p,
+    a {
+        color: #333;
+    }
+
+    h2 {
+        margin-top: 3rem;
+    }
 }

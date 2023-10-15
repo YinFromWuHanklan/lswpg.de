@@ -2,6 +2,12 @@
 	import LinnerSeidemannLogoBig from '$lib/images/Logo_Linner_Seidemann_2023_white.png';
 	import intro_vid from '$lib/images/intro-video.mp4';
 	import Background from '../lib/Background.svelte';
+
+	let isAccepted = false;
+
+	function handleCookie() {
+		isAccepted = !isAccepted;
+	}
 </script>
 
 <svelte:head>
@@ -41,6 +47,11 @@
 		</div>
 	</div>
 </Background>
+
+<div class="cookies" class:accepted={isAccepted}>
+	<p>Mit der Verwendung unserer Webseite erklären Sie sich mit den Datenschutzbedingungen einverstanden. <a href="/datenschutz">Mehr erfahren</a></p>
+    <button id="toggle" on:click={handleCookie}>Einverstanden</button>
+</div>
 
 <style lang="scss">
 	.video_wrapper {
@@ -91,6 +102,22 @@
 		hr {
 			margin: 3rem 2rem;
 		}
+	}
+
+	.cookies {
+		position: sticky;
+    	bottom: 0;
+    	background: #152b43;
+    	text-align: center;
+    	padding: 1.5rem;
+    	padding-top: 0;
+    	color: #FFF;
+    	border-top: 1px solid #FFF;
+    	border-bottom: 1px solid #FFF;
+	}
+
+	.accepted {
+		display: none;
 	}
 
 	@media (max-width: 1055px) {
