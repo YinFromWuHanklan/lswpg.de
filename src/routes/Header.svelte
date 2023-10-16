@@ -141,10 +141,6 @@
 						}
 					}
 				}
-
-				.visible {
-					display: block;
-				}
 			}
 		}
 	}
