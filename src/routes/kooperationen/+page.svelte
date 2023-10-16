@@ -14,7 +14,7 @@
 </Intro>
 
 <section>
-	<h1>Unsere Kooperations&shy;partner</h1>
+	<h1>Unser Kooperations&shy;partner</h1>
 	
 	<div class="content">
 		<img src={severn} alt="Severn" height=200 class="partner_logo" />
@@ -43,6 +43,13 @@
 				margin: 1rem 1.5rem;
 				width: auto;
 				z-index: 1;
+			}
+
+			@media (max-width: 672px) {
+				.partner_logo {
+					width: 70%;
+					height: auto;
+				}
 			}
 		}
 	}

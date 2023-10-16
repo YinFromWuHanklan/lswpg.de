@@ -59,6 +59,10 @@
 			}
 		}
 
+		a {
+			text-decoration: none;
+		}
+
 		.footer_lg {
 			@media (max-width: 672px) {
 				display: none;
