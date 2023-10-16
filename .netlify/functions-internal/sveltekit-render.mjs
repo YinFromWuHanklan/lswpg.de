@@ -12,7 +12,7 @@ return {
 	assets: new Set(["favicon.png","robots.txt"]),
 	mimeTypes: {".png":"image/png",".txt":"text/plain"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.c1f38bb3.js","app":"_app/immutable/entry/app.835ff7a4.js","imports":["_app/immutable/entry/start.c1f38bb3.js","_app/immutable/chunks/scheduler.19461008.js","_app/immutable/chunks/singletons.c7deb6d8.js","_app/immutable/entry/app.835ff7a4.js","_app/immutable/chunks/scheduler.19461008.js","_app/immutable/chunks/index.71439af6.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.d7264d63.js","app":"_app/immutable/entry/app.6e6c28c4.js","imports":["_app/immutable/entry/start.d7264d63.js","_app/immutable/chunks/scheduler.19461008.js","_app/immutable/chunks/singletons.0f88db8c.js","_app/immutable/entry/app.6e6c28c4.js","_app/immutable/chunks/scheduler.19461008.js","_app/immutable/chunks/index.71439af6.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			__memo(() => import('../server/nodes/0.js')),
 			__memo(() => import('../server/nodes/1.js'))
