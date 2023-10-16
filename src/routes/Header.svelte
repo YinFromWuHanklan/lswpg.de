@@ -1,60 +1,151 @@
 <script>
-	let isMobileMenuOpen = false;
-  
-	function toggleMenu() {
-		isMobileMenuOpen = !isMobileMenuOpen;
-	}
-  </script>
-  
-  <style lang="scss">
-	.mobile-menu {
-	  background-color: #00336A;
-	  color: #FFF;
-	  padding: 15px;
-	  text-align: center;
+	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
 
-	  .menu-toggle {
-		border: none;
-		background: none;
-		color: #FFF;
-		font-size: 2.5rem;
-	  }
-  
-	  .menu-items {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		display: none;
-  
-		&.open {
-		  display: block;
-		}
-  
-		li {
-		  margin: 10px 0;
-		  padding-top: 0.8rem;
+	let isOpen = false;
+</script>
 
-		  &+li {
-			border-top: 1px solid #FFF;
-		  }
+<header>
+	<nav>
+		<div class="nav_lg">
+			<ul>
+				<li>
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/services">Services</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/kooperationen">Kooperationen</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/kontakt">Kontakt</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="nav_mobile">
+			<a href="/"><img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=45 /></a>
+			<button class="toggler" on:click={() => (isOpen = !isOpen)}>
+				<div class="bar1"></div>
+  				<div class="bar2"></div>
+  				<div class="bar3"></div>
+			</button>
+			{#if isOpen}
+			<ul class="nav_mobile_list">
+				<li>
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/services">Services</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/kooperationen">Kooperationen</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/kontakt">Kontakt</a>
+				</li>
+			</ul>
+			{/if}
+		</div>
+	</nav>
+</header>
+
+<style lang="scss">
+	nav {
+		padding: 0.8rem 2rem;
+		background-color: #00336A;
+
+		@media (max-width: 672px) {
+			padding: 0.8rem 1rem;
 		}
-  
-		a {
-		  text-decoration: none;
-		  color: white;
-		  font-size: 18px;
+
+		.nav_lg {
+			display: flex;
+			flex-direction: row;
+			justify-content: end;
+
+			@media (max-width: 672px) {
+				display: none;
+			}
+
+			ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				margin-top: 0;
+				margin-bottom: 0.5rem;
+
+				li {
+					list-style: none;
+					padding: 0 1rem;
+					font-family: 'Libre Baskerville', serif;
+					font-size: 1.2rem;
+					margin-top: 0.5rem;
+
+					&+li {
+						border-left: 1px solid #FFF;
+					}
+
+					a {
+						text-decoration: none;
+					}
+				}
+			}
 		}
-	  }
+
+		.nav_mobile {
+			display: none;
+
+			@media (max-width: 672px) {
+				display: inline-block;
+  				cursor: pointer;
+				width: 100%;
+
+				img {
+					float: left;
+				}
+
+				.toggler {
+					float: right;
+					background-color: #00336A;
+					border: none;
+
+					.bar1,
+					.bar2,
+					.bar3 {
+						width: 35px;
+						height: 5px;
+						background-color: #FFF;
+						margin: 6px 0;
+						transition: 0.4s;
+					}
+				}
+
+				ul {
+					padding-left: 0;
+					text-align: center;
+					margin-top: 50px;
+
+					li {
+						list-style: none;
+						font-family: 'Libre Baskerville', serif;
+
+						&+li {
+							border-top: 1px solid #FFF;
+							padding-top: 1rem;
+						}
+
+						a {
+							color: #FFF;
+							text-decoration: none;
+						}
+					}
+				}
+
+				.visible {
+					display: block;
+				}
+			}
+		}
 	}
-  </style>
-  
-  <div class="mobile-menu">
-	<button class="menu-toggle" on:click={toggleMenu}>☰</button>
-	<ul class:open={isMobileMenuOpen} class="menu-items">
-	  <li><a href="/">Home</a></li>
-	  <li><a href="/services">Services</a></li>
-	  <li><a href="/kooperationen">Kooperationen</a></li>
-	  <li><a href="/kontakt">Kontakt</a></li>
-	</ul>
-  </div>
-  
+</style>
