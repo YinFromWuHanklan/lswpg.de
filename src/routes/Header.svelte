@@ -1,6 +1,6 @@
 <script>
 	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
-	import { afterUpdate } from 'svelte';
+	import { onMount, onDestroy, setContext } from 'svelte';
 	
 	let isOpen = false;
 
@@ -8,13 +8,21 @@
 		isOpen = !isOpen;
 	}
 
-	afterUpdate(() => {
-		if (isOpen) {
-			window.addEventListener('popstate', () => {
-				isOpen = false;
-			});
+	onMount(() => {
+		function handlePageChange() {
+			if (isOpen) {
+				toggleMenu();
+			}
 		}
+
+		window.addEventListener('popstate', handlePageChange);
+
+		onDestroy(() => {
+			window.removeEventListener('popstate', handlePageChange);
+		});
 	});
+
+	setContext('mobileMenu', { isOpen });
 </script>
 
 <header>

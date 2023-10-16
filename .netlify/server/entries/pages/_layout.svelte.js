@@ -1,4 +1,4 @@
-import { c as create_ssr_component, b as add_attribute, v as validate_component } from "../../chunks/ssr.js";
+import { c as create_ssr_component, a as setContext, b as add_attribute, v as validate_component } from "../../chunks/ssr.js";
 const logo = "/_app/immutable/assets/Logo_Linner_Seidemann_Bildmarke_2023_white.af1ea60d.png";
 const Header_svelte_svelte_type_style_lang = "";
 const css$1 = {
@@ -6,6 +6,8 @@ const css$1 = {
   map: null
 };
 const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let isOpen = false;
+  setContext("mobileMenu", { isOpen });
   $$result.css.add(css$1);
   return `<header><nav class="svelte-10becwx"><div class="nav_lg svelte-10becwx" data-svelte-h="svelte-1v872b4"><ul class="svelte-10becwx"><li class="svelte-10becwx"><a class="nav-link svelte-10becwx" href="/">Home</a></li> <li class="svelte-10becwx"><a class="nav-link svelte-10becwx" href="/services">Services</a></li> <li class="svelte-10becwx"><a class="nav-link svelte-10becwx" href="/kooperationen">Kooperationen</a></li> <li class="svelte-10becwx"><a class="nav-link svelte-10becwx" href="/kontakt">Kontakt</a></li></ul></div> <div class="nav_mobile svelte-10becwx"><a href="/" class="svelte-10becwx" data-svelte-h="svelte-1f95fc0"><img${add_attribute("src", logo, 0)} alt="Linner Seidemann Wirtschaftsprüfung Logo" width="45" class="svelte-10becwx"></a> <button class="toggler svelte-10becwx" data-svelte-h="svelte-v838h0"><div class="bar1 svelte-10becwx"></div> <div class="bar2 svelte-10becwx"></div> <div class="bar3 svelte-10becwx"></div></button> ${``}</div></nav> </header>`;
 });
