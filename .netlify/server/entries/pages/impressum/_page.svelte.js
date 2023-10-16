@@ -1,6 +1,6 @@
 import { c as create_ssr_component } from "../../../chunks/ssr.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${$$result.head += `<!-- HEAD_svelte-km3s9b_START -->${$$result.title = `<title>Impressum</title>`, ""}<meta name="description" content="Impressum"><!-- HEAD_svelte-km3s9b_END -->`, ""} <div class="legal_wrapper" data-svelte-h="svelte-22g62u"><h1>Impressum</h1> <h2>Linner | Seidemann PartG mbB Wirtschaftsprüfungsgesellschaft</h2> <p>Arabellastraße 19 a<br>
+  return `${$$result.head += `<!-- HEAD_svelte-km3s9b_START -->${$$result.title = `<title>Impressum</title>`, ""}<meta name="description" content="Impressum"><!-- HEAD_svelte-km3s9b_END -->`, ""} <div class="legal_wrapper" data-svelte-h="svelte-1c5lmdp"><h1>Impressum</h1> <h2>Linner | Seidemann PartG mbB Wirtschaftsprüfungs­gesellschaft</h2> <p>Arabellastraße 19 a<br>
 			81925 München</p> <p><b>Telefon:</b> + 49 89 12 23 45 87 – 0<br> <b>Fax:</b> + 49 89 12 23 45 87 – 99<br> <b>E-Mail:</b> <a href="mailto:info@lswpg.de">info@lswpg.de</a></p> <p><b>Inhaltlich verantwortlich für die Homepage:</b> WP Andreas Seidemann</p> <p><b>USt-ID:</b> DE360991422</p> <p><b>Registergericht München:</b> PR XXXX</p> <p><b>Berufshaftpflichtversicherung:</b><br>
 			HDI Versicherung AG, HDI-Platz 1, 30650 Hannover</p> <p><b>Zuständige Aufsichtsbehörde und Kammer:</b><br>
 			Wirtschaftsprüferkammer Berlin, die gesetzliche Berufsbezeichnung

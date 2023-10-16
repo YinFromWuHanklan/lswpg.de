@@ -1,7 +1,20 @@
 <script>
 	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
-
+	import { afterUpdate } from 'svelte';
+	
 	let isOpen = false;
+
+	function toggleMenu() {
+		isOpen = !isOpen;
+	}
+
+	afterUpdate(() => {
+		if (isOpen) {
+			window.addEventListener('popstate', () => {
+				isOpen = false;
+			});
+		}
+	});
 </script>
 
 <header>
@@ -25,7 +38,7 @@
 
 		<div class="nav_mobile">
 			<a href="/"><img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=45 /></a>
-			<button class="toggler" on:click={() => (isOpen = !isOpen)}>
+			<button class="toggler" on:click={toggleMenu}>
 				<div class="bar1"></div>
   				<div class="bar2"></div>
   				<div class="bar3"></div>
@@ -142,9 +155,9 @@
 					}
 				}
 
-				.visible {
-					display: block;
-				}
+				// .open {
+				// 	display: block;
+				// }
 			}
 		}
 	}

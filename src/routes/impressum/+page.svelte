@@ -5,7 +5,7 @@
 
 	<div class="legal_wrapper">
 		<h1>Impressum</h1>
-		<h2>Linner | Seidemann PartG mbB Wirtschaftsprüfungsgesellschaft</h2>
+		<h2>Linner | Seidemann PartG mbB Wirtschaftsprüfungs&shy;gesellschaft</h2>
 		<p>
 			Arabellastraße 19 a<br />
 			81925 München
