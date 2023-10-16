@@ -1,28 +1,7 @@
 <script>
 	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
-	import { onMount, onDestroy, setContext } from 'svelte';
-	
+
 	let isOpen = false;
-
-	function toggleMenu() {
-		isOpen = !isOpen;
-	}
-
-	onMount(() => {
-		function handlePageChange() {
-			if (isOpen) {
-				toggleMenu();
-			}
-		}
-
-		window.addEventListener('popstate', handlePageChange);
-
-		onDestroy(() => {
-			window.removeEventListener('popstate', handlePageChange);
-		});
-	});
-
-	setContext('mobileMenu', { isOpen });
 </script>
 
 <header>
@@ -46,7 +25,7 @@
 
 		<div class="nav_mobile">
 			<a href="/"><img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=45 /></a>
-			<button class="toggler" on:click={toggleMenu}>
+			<button class="toggler" on:click={() => (isOpen = !isOpen)}>
 				<div class="bar1"></div>
   				<div class="bar2"></div>
   				<div class="bar3"></div>
@@ -162,10 +141,6 @@
 						}
 					}
 				}
-
-				// .open {
-				// 	display: block;
-				// }
 			}
 		}
 	}

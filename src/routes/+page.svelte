@@ -20,7 +20,9 @@
 		<source src="{intro_vid}" type="video/mp4">
 	</video>
 	<h1>
-		Linner | Seidemann<br />Wirtschafts&shy;prüfung
+		excellence<br />
+		service<br />
+		passion
 	</h1>
 </div>
 
