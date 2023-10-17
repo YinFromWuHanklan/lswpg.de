@@ -1,7 +1,12 @@
 <script>
 	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
 
-	let isOpen = false;
+	let clicked = false;
+
+	function handleClick(e) {
+		e.preventDefault();
+		clicked = !clicked;
+	}
 </script>
 
 <header>
@@ -25,27 +30,25 @@
 
 		<div class="nav_mobile">
 			<a href="/"><img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=45 /></a>
-			<button class="toggler" on:click={() => (isOpen = !isOpen)}>
+			<button class="toggler" on:click={handleClick}>
 				<div class="bar1"></div>
   				<div class="bar2"></div>
   				<div class="bar3"></div>
 			</button>
-			{#if isOpen}
-			<ul class="nav_mobile_list">
+			<ul class="nav_mobile_list" class:visible={ clicked }>
 				<li>
-					<a class="nav-link" href="/" on:click={() => isOpen = false}>Home</a>
+					<a class="nav-link" href="/" on:click={() => clicked = false}>Home</a>
 				</li>
 				<li>
-					<a class="nav-link" href="/services" on:click={() => isOpen = false}>Services</a>
+					<a class="nav-link" href="/services" on:click={() => clicked = false}>Services</a>
 				</li>
 				<li>
-					<a class="nav-link" href="/kooperationen" on:click={() => isOpen = false}>Kooperationen</a>
+					<a class="nav-link" href="/kooperationen" on:click={() => clicked = false}>Kooperationen</a>
 				</li>
 				<li>
-					<a class="nav-link" href="/kontakt" on:click={() => isOpen = false}>Kontakt</a>
+					<a class="nav-link" href="/kontakt" on:click={() => clicked = false}>Kontakt</a>
 				</li>
 			</ul>
-			{/if}
 		</div>
 	</nav>
 </header>
@@ -125,6 +128,7 @@
 					padding-left: 0;
 					text-align: center;
 					margin-top: 50px;
+					display: none;
 
 					li {
 						list-style: none;
@@ -140,6 +144,10 @@
 							text-decoration: none;
 						}
 					}
+				}
+
+				.visible {
+					display: block;
 				}
 			}
 		}
