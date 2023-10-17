@@ -1,7 +1,15 @@
 <script>
 	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
+	import { page } from '$app/stores';
 
 	let clicked = false;
+
+	function handleClick(e) {
+		e.preventDefault();
+		clicked = !clicked;
+	}
+
+	$: $page.url && (clicked = false);
 </script>
 
 <header>
@@ -25,7 +33,7 @@
 
 		<div class="nav_mobile">
 			<a href="/"><img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=45 /></a>
-			<button class="toggler" on:click={() => (clicked = !clicked)}>
+			<button class="toggler" on:click={handleClick}>
 				<div class="bar1"></div>
   				<div class="bar2"></div>
   				<div class="bar3"></div>
