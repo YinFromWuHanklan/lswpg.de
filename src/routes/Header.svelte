@@ -40,16 +40,16 @@
 			</button>
 			<ul class="nav_mobile_list" class:visible={ clicked }>
 				<li>
-					<a class="nav-link" href="/">Home</a>
+					<a class="nav-link" href="/" on:click={() => clicked = false}>Home</a>
 				</li>
 				<li>
-					<a class="nav-link" href="/services">Services</a>
+					<a class="nav-link" href="/services" on:click={() => clicked = false}>Services</a>
 				</li>
 				<li>
-					<a class="nav-link" href="/kooperationen">Kooperationen</a>
+					<a class="nav-link" href="/kooperationen" on:click={() => clicked = false}>Kooperationen</a>
 				</li>
 				<li>
-					<a class="nav-link" href="/kontakt">Kontakt</a>
+					<a class="nav-link" href="/kontakt" on:click={() => clicked = false}>Kontakt</a>
 				</li>
 			</ul>
 		</div>
