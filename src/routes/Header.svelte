@@ -33,16 +33,16 @@
 			{#if isOpen}
 			<ul class="nav_mobile_list">
 				<li>
-					<a class="nav-link" href="/" on:click={() => isOpen = false}>Home</a>
+					<a class="nav-link" href="/">Home</a>
 				</li>
 				<li>
-					<a class="nav-link" href="/services" on:click={() => isOpen = false}>Services</a>
+					<a class="nav-link" href="/services">Services</a>
 				</li>
 				<li>
-					<a class="nav-link" href="/kooperationen" on:click={() => isOpen = false}>Kooperationen</a>
+					<a class="nav-link" href="/kooperationen">Kooperationen</a>
 				</li>
 				<li>
-					<a class="nav-link" href="/kontakt" on:click={() => isOpen = false}>Kontakt</a>
+					<a class="nav-link" href="/kontakt">Kontakt</a>
 				</li>
 			</ul>
 			{/if}
