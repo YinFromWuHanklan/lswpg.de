@@ -2,6 +2,7 @@
 	import LinnerSeidemannLogoBig from '$lib/images/Logo_Linner_Seidemann_2023_white.png';
 	import intro_vid from '$lib/images/intro-video.mp4';
 	import Background from '../lib/Background.svelte';
+	import IntroVidImage from '$lib/images/intro-mobil.jpg';
 
 	let isAccepted = false;
 
@@ -16,15 +17,18 @@
 </svelte:head>
 
 <div class="video_wrapper">
-	<video id="background-video" autoplay loop muted poster="{LinnerSeidemannLogoBig}}">
+	<video id="background-video" autoplay loop muted poster="{IntroVidImage}}">
 		<source src="{intro_vid}" type="video/mp4">
 	</video>
-	<h1>
+	<img src="{IntroVidImage}" alt="Linner Seidemann Wirtschaftsprüfung Intro mobil" class="intro_vid_img">
+	<div class="intro_vid_text">
 		excellence<br />
 		service<br />
 		passion
-	</h1>
+	</div>
 </div>
+
+<h1>Linner Seidemann Wirtschaftsprüfung</h1>
 
 <img src="{LinnerSeidemannLogoBig}" alt="Linner Seidemann Wirtschaftsprüfung Logo" />
 
@@ -74,11 +78,23 @@
 			width: 100%;
 		}
 
-		h1 {
+		.intro_vid_img {
+			display: none;
+		}
+
+		.intro_vid_text {
 			position: relative;
 			color: #FFF;
 			text-shadow: 1px 1px 2px #00336A;
+			font-size: 2.5rem;
+    		background: rgb(0, 82, 121, 61%);
+    		padding: 1rem 2rem 1.5rem;
+			text-transform: uppercase;
 		}
+	}
+
+	h1 {
+		display: none;
 	}
 
 	img {
@@ -144,6 +160,23 @@
 	}
 
 	@media (max-width: 672px) {
+		.video_wrapper {
+			height: auto;
+			video {
+				display: none;
+			}
+
+			.intro_vid_img {
+				display: flex;
+			}
+
+			.intro_vid_text {
+				position: absolute;
+				background: none;
+				font-size: 1.8rem;
+			}
+		}
+
 		img {
 			width: 100%;
 		}
