@@ -73,16 +73,12 @@
 			width: auto;
 		}
 
-		// svg {
-		// 	fill: #FFF;
-		// 	margin: 1rem 0;
-		// }
-
 		.mobile {
 			display: none;
 		}
 
 		.contact_element {
+			text-align: center;
 			.contact_info {
 				display: flex;
 				flex-direction: row;
@@ -92,6 +88,7 @@
 
 				p {
 					margin: 0;
+					margin-right: 1rem;
 					font-size: 1rem;
 				}
 			}
@@ -143,7 +140,16 @@
 
 			.mobile_wrap {
 				.contact_element {
-					margin: 2rem auto;					
+					margin: 2rem auto;	
+					
+					.kontakt_photo {
+						height: 300px;
+					}
+
+					.contact_info {
+						padding: 0.8rem 0;
+						text-align: center;
+					}
 				}
 			}
 		}
