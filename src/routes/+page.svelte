@@ -87,7 +87,7 @@
 			color: #FFF;
 			text-shadow: 1px 1px 2px #00336A;
 			font-size: 2.5rem;
-    		background: rgb(0, 82, 121, 61%);
+    		background: rgb(0, 82, 121, 80%);
     		padding: 1rem 2rem 1.5rem;
 			text-transform: uppercase;
 		}
