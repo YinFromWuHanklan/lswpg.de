@@ -11,8 +11,8 @@
 			81925 München
 		</p>
 		<p>
-			<b>Telefon:</b> + 49 89 12 23 45 87 – 0<br />
-			<b>Fax:</b> + 49 89 12 23 45 87 – 99<br />
+			<b>Telefon:</b> + 49 89 541 96 13 30<br />
+			<b>Fax:</b> + 49 89 541 96 13 39<br />
 			<b>E-Mail:</b> <a href="mailto:info@lswpg.de">info@lswpg.de</a>
 		</p>
 		
