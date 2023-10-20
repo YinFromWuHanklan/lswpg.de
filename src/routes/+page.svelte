@@ -17,7 +17,7 @@
 </svelte:head>
 
 <div class="video_wrapper">
-	<video id="background-video" autoplay loop muted poster="{IntroVidImage}}">
+	<video id="background-video" autoplay loop muted poster={IntroVidImage}>
 		<source src={IntroVid} type="video/mp4">
 	</video>
 	<img src={IntroVidImage} alt="Linner Seidemann Wirtschaftsprüfung Intro mobil" class="intro_vid_img">
