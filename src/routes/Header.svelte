@@ -55,8 +55,14 @@
 </header>
 
 <style lang="scss">
+	header {
+		position: sticky;
+    	top: 0;
+    	z-index: 1;
+	}
+
 	nav {
-		padding: 0.8rem 2rem;
+		padding: 0.8rem 1.5rem;
 		background-color: #00336A;
 
 		@media (max-width: 672px) {
@@ -78,6 +84,7 @@
 				justify-content: flex-end;
 				margin-top: 0;
 				margin-bottom: 0.5rem;
+				align-items: center;
 
 				li {
 					list-style: none;
@@ -85,6 +92,10 @@
 					font-family: 'Libre Baskerville', serif;
 					font-size: 1.2rem;
 					margin-top: 0.5rem;
+
+					&:last-child {
+						padding-right: 0;
+					}
 
 					&+li {
 						border-left: 1px solid #FFF;
