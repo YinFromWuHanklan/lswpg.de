@@ -129,6 +129,7 @@
 					padding-left: 0;
 					text-align: center;
 					margin-top: 50px;
+					height: auto;
 
 					li {
 						list-style: none;
