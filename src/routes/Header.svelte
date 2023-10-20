@@ -104,6 +104,7 @@
 				display: inline-block;
   				cursor: pointer;
 				width: 100%;
+				height: auto;
 
 				img {
 					float: left;
@@ -129,7 +130,6 @@
 					padding-left: 0;
 					text-align: center;
 					margin-top: 50px;
-					height: auto;
 
 					li {
 						list-style: none;
