@@ -1,7 +1,10 @@
 <script>
 	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
+	import { page } from '$app/stores';
 
 	let isOpen = false;
+
+	$: $page.url && (isOpen = false);
 </script>
 
 <header>
