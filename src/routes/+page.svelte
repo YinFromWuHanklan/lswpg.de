@@ -17,10 +17,10 @@
 </svelte:head>
 
 <div class="video_wrapper">
+	<img src={IntroVidImage} alt="Linner Seidemann Wirtschaftsprüfung Intro mobil" class="intro_vid_img">
 	<video id="background-video" autoplay loop muted poster={IntroVidImage}>
 		<source src={IntroVid} type="video/mp4">
 	</video>
-	<img src={IntroVidImage} alt="Linner Seidemann Wirtschaftsprüfung Intro mobil" class="intro_vid_img">
 	<div class="intro_vid_text">
 		excellence<br />
 		service<br />
@@ -165,10 +165,12 @@
 
 			#background-video {
 				display: none;
+				pointer-events: none;
 			}
 
 			.intro_vid_img {
 				display: flex;
+				pointer-events: none;
 			}
 
 			.intro_vid_text {
