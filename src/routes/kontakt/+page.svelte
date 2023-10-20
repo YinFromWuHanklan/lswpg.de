@@ -60,7 +60,7 @@
 	}
 
 	h1 {
-		margin: 0 1rem;
+		margin: 3rem 1rem 0;
 	}
 
 	.content {
