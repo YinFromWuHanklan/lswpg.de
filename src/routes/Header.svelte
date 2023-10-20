@@ -27,7 +27,7 @@
 			</ul>
 		</div>
 
-		<div class="nav_mobile" class:close_nav={isOpen === false}>
+		<div class="nav_mobile">
 			<a href="/"><img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=45 /></a>
 			<button class="toggler" on:click={() => (isOpen = !isOpen)}>
 				<div class="bar1"></div>
@@ -101,22 +101,22 @@
 			display: none;
 
 			@media (max-width: 672px) {
-				display: inline-block;
-  				cursor: pointer;
-				width: 100%;
-				
-				&.closeNav {
-					height: 10px;
-				}
+				display: flex;
+    			cursor: pointer;
+    			width: 100%;
+    			height: auto;
+    			justify-content: space-between;
 
-				img {
-					float: left;
-				}
+				// img {
+				// 	float: left;
+				// }
 
 				.toggler {
-					float: right;
+					// float: right;
 					background-color: #00336A;
 					border: none;
+					position: absolute;
+					right: 10px;
 
 					.bar1,
 					.bar2,
@@ -133,6 +133,7 @@
 					padding-left: 0;
 					text-align: center;
 					margin-top: 50px;
+					width: 100%;
 
 					li {
 						list-style: none;
@@ -149,6 +150,14 @@
 						}
 					}
 				}
+				
+				// &.closeNav {
+				// 	height: 15px;
+
+				// 	ul {
+				// 		display: none;
+				// 	}
+				// }
 			}
 		}
 	}
