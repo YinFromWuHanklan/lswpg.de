@@ -4,6 +4,16 @@
 
 	let isOpen = false;
 
+	function toggleNav() {
+		isOpen = !isOpen;
+		const navMobile = document.querySelector('nav_mobile');
+		if (isOpen) {
+			navMobile.classList.add('open');
+		} else {
+			navMobile.classList.remove('open');
+		}
+	}
+
 	$: $page.url && (isOpen = false);
 </script>
 
@@ -29,12 +39,12 @@
 
 		<div class="nav_mobile">
 			<a href="/"><img src="{logo}" alt="Linner Seidemann Wirtschaftsprüfung Logo" width=45 /></a>
-			<button class="toggler" on:click={() => (isOpen = !isOpen)}>
+			<button class="toggler" on:click={toggleNav}>
 				<div class="bar1"></div>
   				<div class="bar2"></div>
   				<div class="bar3"></div>
 			</button>
-			{#if isOpen}
+			<!-- {#if isOpen} -->
 			<ul class="nav_mobile_list">
 				<li>
 					<a class="nav-link" href="/">Home</a>
@@ -49,7 +59,7 @@
 					<a class="nav-link" href="/kontakt">Kontakt</a>
 				</li>
 			</ul>
-			{/if}
+			<!-- {/if} -->
 		</div>
 	</nav>
 </header>
@@ -130,7 +140,13 @@
 					padding-left: 0;
 					text-align: center;
 					margin-top: 50px;
-					background-color: red;
+					display: none;
+					height: 0;
+
+					&.open {
+						display: block;
+						height: auto;
+					}
 
 					li {
 						list-style: none;
