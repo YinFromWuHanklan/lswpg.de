@@ -130,6 +130,7 @@
 					padding-left: 0;
 					text-align: center;
 					margin-top: 50px;
+					background-color: red;
 
 					li {
 						list-style: none;
