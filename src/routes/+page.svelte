@@ -1,6 +1,6 @@
 <script>
 	import LinnerSeidemannLogoBig from '$lib/images/Logo_Linner_Seidemann_2023_white.png';
-	import intro_vid from '$lib/images/intro-video.mp4';
+	import IntroVid from '$lib/images/intro-video.mp4';
 	import Background from '../lib/Background.svelte';
 	import IntroVidImage from '$lib/images/intro-mobil.jpg';
 
@@ -18,9 +18,9 @@
 
 <div class="video_wrapper">
 	<video id="background-video" autoplay loop muted poster="{IntroVidImage}}">
-		<source src="{intro_vid}" type="video/mp4">
+		<source src={IntroVid} type="video/mp4">
 	</video>
-	<img src="{IntroVidImage}" alt="Linner Seidemann Wirtschaftsprüfung Intro mobil" class="intro_vid_img">
+	<img src={IntroVidImage} alt="Linner Seidemann Wirtschaftsprüfung Intro mobil" class="intro_vid_img">
 	<div class="intro_vid_text">
 		excellence<br />
 		service<br />
@@ -30,7 +30,7 @@
 
 <h1>Linner Seidemann Wirtschaftsprüfung</h1>
 
-<img src="{LinnerSeidemannLogoBig}" alt="Linner Seidemann Wirtschaftsprüfung Logo" />
+<img src={LinnerSeidemannLogoBig} alt="Linner Seidemann Wirtschaftsprüfung Logo" />
 
 <Background>
 	<div slot="section_content" class="content">
@@ -162,7 +162,8 @@
 	@media (max-width: 672px) {
 		.video_wrapper {
 			height: auto;
-			video {
+
+			#background-video {
 				display: none;
 			}
 
