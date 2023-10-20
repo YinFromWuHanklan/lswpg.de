@@ -34,23 +34,23 @@
   				<div class="bar2"></div>
   				<div class="bar3"></div>
 			</button>
-			{#if isOpen}
-			<ul class="nav_mobile_list">
-				<li>
-					<a class="nav-link" href="/">Home</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/services">Services</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/kooperationen">Kooperationen</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/kontakt">Kontakt</a>
-				</li>
-			</ul>
-			{/if}
 		</div>
+		{#if isOpen}
+		<ul class="nav_mobile_list">
+			<li>
+				<a class="nav-link" href="/">Home</a>
+			</li>
+			<li>
+				<a class="nav-link" href="/services">Services</a>
+			</li>
+			<li>
+				<a class="nav-link" href="/kooperationen">Kooperationen</a>
+			</li>
+			<li>
+				<a class="nav-link" href="/kontakt">Kontakt</a>
+			</li>
+		</ul>
+		{/if}
 	</nav>
 </header>
 
@@ -107,12 +107,7 @@
     			height: auto;
     			justify-content: space-between;
 
-				// img {
-				// 	float: left;
-				// }
-
 				.toggler {
-					// float: right;
 					background-color: #00336A;
 					border: none;
 					position: absolute;
@@ -128,36 +123,32 @@
 						transition: 0.4s;
 					}
 				}
+			}
+		}
 
-				ul {
-					padding-left: 0;
-					text-align: center;
-					margin-top: 50px;
-					width: 100%;
+		.nav_mobile_list {
+			display: none;
 
-					li {
-						list-style: none;
-						font-family: 'Libre Baskerville', serif;
+			@media (max-width: 672px) {
+				display: block;
+				padding-left: 0;
+				text-align: center;
+				width: 100%;
 
-						&+li {
-							border-top: 1px solid #FFF;
-							padding-top: 1rem;
-						}
+				li {
+					list-style: none;
+					font-family: 'Libre Baskerville', serif;
 
-						a {
-							color: #FFF;
-							text-decoration: none;
-						}
+					&+li {
+						border-top: 1px solid #FFF;
+						padding-top: 1rem;
+					}
+
+					a {
+						color: #FFF;
+						text-decoration: none;
 					}
 				}
-				
-				// &.closeNav {
-				// 	height: 15px;
-
-				// 	ul {
-				// 		display: none;
-				// 	}
-				// }
 			}
 		}
 	}

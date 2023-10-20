@@ -59,6 +59,10 @@
 		z-index: -1;
 	}
 
+	h1 {
+		margin: 0 1rem;
+	}
+
 	.content {
 		display: flex;
 		flex-direction: row;
