@@ -20,6 +20,7 @@
 	<img src={IntroVidImage} alt="Linner Seidemann Wirtschaftsprüfung Intro mobil" class="intro_vid_img">
 	<video id="background-video" autoplay loop muted poster={IntroVidImage}>
 		<source src={IntroVid} type="video/mp4">
+		Your browser does not support HTML5 video.
 	</video>
 	<div class="intro_vid_text">
 		excellence<br />
@@ -164,7 +165,7 @@
 			height: auto;
 
 			#background-video {
-				display: none;
+				display: none !important;
 				pointer-events: none;
 			}
 
