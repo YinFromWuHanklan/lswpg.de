@@ -4,6 +4,8 @@
 	import Background from '../lib/Background.svelte';
 	import IntroVidImage from '$lib/images/intro-mobil.jpg';
 
+	let screenSize;
+
 	let isAccepted = false;
 
 	function handleCookie() {
@@ -16,8 +18,19 @@
 	<meta name="description" content="Linner Seidemann Wirtschaftsprüfung" />
 </svelte:head>
 
+<svelte:window bind:innerWidth={screenSize} />
+{#if screenSize <= 672}
 <div class="video_wrapper">
 	<img src={IntroVidImage} alt="Linner Seidemann Wirtschaftsprüfung Intro mobil" class="intro_vid_img">
+	<div class="intro_vid_text">
+		excellence<br />
+		service<br />
+		passion
+	</div>
+</div>
+{/if}
+{#if screenSize > 672}
+<div class="video_wrapper">
 	<video id="background-video" autoplay loop muted poster={IntroVidImage}>
 		<source src={IntroVid} type="video/mp4">
 		Your browser does not support HTML5 video.
@@ -28,6 +41,7 @@
 		passion
 	</div>
 </div>
+{/if}
 
 <h1>Linner Seidemann Wirtschaftsprüfung</h1>
 
