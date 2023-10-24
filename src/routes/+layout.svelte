@@ -76,6 +76,7 @@
 			@media (max-width: 672px) {
 				display: flex;
 				flex-direction: column;
+				width: 100%;
 
 				p {
 					text-align: center;
