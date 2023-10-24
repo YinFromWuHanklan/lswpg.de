@@ -14,8 +14,8 @@
 </script>
 
 <svelte:head>
-	<title>Linner Seidemann Wirtschaftsprüfung</title>
-	<meta name="description" content="Linner Seidemann Wirtschaftsprüfung" />
+	<title>Linner | Seidemann Wirtschaftsprüfung</title>
+	<meta name="description" content="Linner | Seidemann Wirtschaftsprüfung" />
 </svelte:head>
 
 <svelte:window bind:innerWidth={screenSize} />
