@@ -27,7 +27,7 @@
 				</div>
 			</div>
 			<div class="cta_text">
-				<p>Sie haben Fragen, ein konkretes Anliegen oder möchten direkt mit uns in Kontakt treten? Wir freuen uns auf Ihre Nachricht und melden uns schnellstmöglich bei Ihnen.</p>
+				<p>Sie haben Fragen, ein konkretes Anliegen oder möchten direkt mit uns in Kontakt treten? Wir freuen uns auf Ihre Nachricht und melden uns schnell<nobr/>stmöglich bei Ihnen.</p>
 				<div class="cta_details">
 					<p class="cta_link"><a href="tel:+4989541961330">T +49 89 541 96 13 30</a></p>
 					<p class="cta_link"><a href="mailto:info@lswpg.de">info@lswpg.de</a></p>
