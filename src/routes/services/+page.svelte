@@ -23,23 +23,23 @@
 			<h2>AUDIT – FINANCIAL SERVICES</h2>
 		</div>
 		<ul slot="details" class="detail">
-				<li>
-					Jahres- und Konzernabschlussprüfung von
-					<ul>
-						<li>Wertpapierinstituten</li>
-						<li>Finanzdienstleistungsinstituten</li>
-						<li>Kreditinstituten</li>
-						<li>Kapitalverwaltungsgesellschaften</li>
-						<li>Leasinggesellschaften</li>
-					</ul>
-				</li>
-				<li>
-					WpHG-Prüfung
-					<ul>
-						<li>Prüfung nach § 89 Abs. 1 Satz 1 WpHG</li>
-					</ul>
-				</li>
-				<li>Prüferische Durchsicht von Abschlüssen</li>
+			<li>
+				Jahres- und Konzernabschlussprüfung von
+				<ul>
+					<li>Wertpapierinstituten</li>
+					<li>Finanzdienstleistungsinstituten</li>
+					<li>Kreditinstituten</li>
+					<li>Kapitalverwaltungsgesellschaften</li>
+					<li>Leasinggesellschaften</li>
+				</ul>
+			</li>
+			<li>
+				WpHG-Prüfung
+				<ul>
+					<li>Prüfung nach § 89 Abs. 1 Satz 1 WpHG</li>
+				</ul>
+			</li>
+			<li>Prüferische Durchsicht von Abschlüssen</li>
 		</ul>
 		</Accordion>
 		
