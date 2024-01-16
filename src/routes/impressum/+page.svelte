@@ -20,7 +20,7 @@
 		
 		<p><b>USt-ID:</b> DE360991422</p>
 		
-		<p><b>Registergericht München:</b> PR XXXX</p>
+		<p><b>Registergericht München:</b> PR 2403</p>
 		
 		<p>
 			<b>Berufshaftpflichtversicherung:</b><br />
