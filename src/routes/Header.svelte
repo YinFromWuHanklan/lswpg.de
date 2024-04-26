@@ -1,6 +1,7 @@
 <script>
 	import logo from '$lib/images/Logo_Linner_Seidemann_Bildmarke_2023_white.png';
 	import { page } from '$app/stores';
+	import report from '$lib/files/CL_Transparenzbericht_2020_tk_final.pdf';
 
 	let isOpen = false;
 
@@ -17,6 +18,9 @@
 				</li>
 				<li>
 					<a class="nav-link" href="/services">Services</a>
+				</li>
+				<li>
+					<a class="nav-link" href="{report}" target="_blank">Transparentbericht</a>
 				</li>
 				<li>
 					<a class="nav-link" href="/kooperationen">Kooperationen</a>
