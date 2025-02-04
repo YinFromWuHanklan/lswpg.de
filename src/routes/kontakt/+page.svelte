@@ -12,48 +12,62 @@
 	<meta name="description" content="Kontakt" />
 </svelte:head>
 
-	<Intro>
-		<img slot="intro_bg" src={BgKontakt} alt="Kontakt Linner Seidemann Wirtschaftsprüfung" />
-	</Intro>
+<Intro>
+	<img slot="intro_bg" src={BgKontakt} alt="Kontakt Linner Seidemann Wirtschaftsprüfung" />
+</Intro>
 
-	<Background>
-		<h1 slot="section_title">Kontaktieren Sie uns!</h1>
-		<div slot="section_content" class="content">
-			<div class="lg contact_element">
-				<img src={kontaktlinner} alt="Kontakt Linner" height=250 class="kontakt_photo">
+<Background>
+	<h1 slot="section_title">Kontaktieren Sie uns!</h1>
+	<div slot="section_content" class="content">
+		<div class="lg contact_element">
+			<img src={kontaktlinner} alt="Kontakt Linner" height="250" class="kontakt_photo" />
+			<div class="contact_info">
+				<p>WP Corinna Linner</p>
+				<a
+					href="https://www.linkedin.com/in/corinna-linner-08483153/"
+					target="_blank"
+					rel="”noreferrer”"><Linkedin /></a
+				>
+			</div>
+		</div>
+		<div class="cta_text">
+			<p>
+				Sie haben Fragen, ein konkretes Anliegen oder möchten direkt mit uns in Kontakt treten? Wir
+				freuen uns auf Ihre Nachricht und melden uns schnell<nobr />stmöglich bei Ihnen.
+			</p>
+			<div class="cta_details">
+				<p class="cta_link"><a href="tel:+4989541961330">T +49 89 599 88 483</a></p>
+				<p class="cta_link"><a href="mailto:info@lswpg.de">info@lswpg.de</a></p>
+			</div>
+		</div>
+		<div class="mobile_wrap">
+			<div class="mobile contact_element">
+				<img src={kontaktlinner} alt="Kontakt Linner" height="250" class="kontakt_photo" />
 				<div class="contact_info">
 					<p>WP Corinna Linner</p>
-					<a href="https://www.linkedin.com/in/corinna-linner-08483153/" target="_blank" rel=”noreferrer”><Linkedin/></a>
+					<a
+						href="https://www.linkedin.com/in/corinna-linner-08483153/"
+						target="_blank"
+						rel="”noreferrer”"><Linkedin /></a
+					>
 				</div>
 			</div>
-			<div class="cta_text">
-				<p>Sie haben Fragen, ein konkretes Anliegen oder möchten direkt mit uns in Kontakt treten? Wir freuen uns auf Ihre Nachricht und melden uns schnell<nobr/>stmöglich bei Ihnen.</p>
-				<div class="cta_details">
-					<p class="cta_link"><a href="tel:+4989541961330">T +49 89 541 96 13 30</a></p>
-					<p class="cta_link"><a href="mailto:info@lswpg.de">info@lswpg.de</a></p>
-				</div>
-			</div>
-			<div class="mobile_wrap">
-				<div class="mobile contact_element">
-					<img src={kontaktlinner} alt="Kontakt Linner" height=250 class="kontakt_photo">
-					<div class="contact_info">
-						<p>WP Corinna Linner</p>
-						<a href="https://www.linkedin.com/in/corinna-linner-08483153/" target="_blank" rel=”noreferrer”><Linkedin/></a>
-					</div>
-				</div>
-				<div class="contact_element">
-					<img src={kontaktseidemann} alt="Kontakt Seidemann" height=250 class="kontakt_photo">
-					<div class="contact_info">
-						<p>WP Andreas Seidemann</p>
-						<a href="https://www.linkedin.com/in/andreas-seidemann-632226229/" target="_blank" rel=”noreferrer”><Linkedin/></a>
-					</div>
+			<div class="contact_element">
+				<img src={kontaktseidemann} alt="Kontakt Seidemann" height="250" class="kontakt_photo" />
+				<div class="contact_info">
+					<p>WP Andreas Seidemann</p>
+					<a
+						href="https://www.linkedin.com/in/andreas-seidemann-632226229/"
+						target="_blank"
+						rel="”noreferrer”"><Linkedin /></a
+					>
 				</div>
 			</div>
 		</div>
-	</Background>
+	</div>
+</Background>
 
 <style lang="scss">
-
 	img {
 		width: 100vw;
 		z-index: -1;
@@ -72,7 +86,7 @@
 		margin: 0 auto;
 
 		.kontakt_photo {
-			border: 1px solid #FFF;
+			border: 1px solid #fff;
 			border-radius: 5px;
 			width: auto;
 		}
@@ -106,7 +120,7 @@
 				padding: 1rem 2rem;
 				width: fit-content;
 				margin: 1rem auto 2rem;
-				
+
 				p,
 				a {
 					font-size: 1.2rem;
@@ -144,8 +158,8 @@
 
 			.mobile_wrap {
 				.contact_element {
-					margin: 2rem auto;	
-					
+					margin: 2rem auto;
+
 					.kontakt_photo {
 						height: 300px;
 					}
@@ -158,6 +172,4 @@
 			}
 		}
 	}
-		
 </style>
-	
